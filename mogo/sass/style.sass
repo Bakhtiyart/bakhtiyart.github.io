@@ -1,0 +1,452 @@
+@import 'reset'
+
+img
+	max-width: 100%
+	height: auto
+
+.container
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto
+
+.clearfix::after
+	content: ''
+	display: table
+	clear: both
+
+body
+	font-family: "Roboto"
+	color: #999999
+	font-size: 15px
+
+header
+	background: url('../img/header-bg.jpg') no-repeat center center
+	background-size: cover
+	height: 975px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background: linear-gradient(to bottom, darken(#e88282, 10%), #f0d589)
+		opacity: .9
+	.header-content
+		position: relative
+		z-index: 1
+	.header-top
+		padding-top: 25px
+		width: 100%
+		.logo
+			float: left
+			width: 90px
+			font-family: 'Montserrat', sans-serif
+			font-weight: bold
+			color: #fff
+			font-size: 30px
+		.menu-top
+			float: right
+			.nav
+				list-style: none
+				li
+					display: inline-block
+					margin-right: 55px
+					margin-top: 10px
+					&:last-child
+						margin-right: 0 
+					a
+						color: #fff
+						font-size: 14px
+						text-transform: uppercase
+						text-decoration: none
+						font-family: 'Montserrat', sans-serif
+						border-bottom: 2px solid transparent
+						padding-bottom: 10px
+						display: inline-block
+						&:hover
+							color: #fce38a
+							border-bottom: 2px solid #fce38a
+							transition: border .25s ease
+							transition-delay: .05s
+
+//header-middle
+.header-middle
+	width: 100%
+	text-align: center
+	.creative
+		font-family: 'Kaushan Script', cursive
+		font-size: 72px
+		color: #fff
+		margin-top: 165px
+	.welcome
+		font-family: 'Montserrat', sans-serif
+		font-size: 150px
+		color: #fff
+		text-transform: uppercase
+		font-weight: bold
+	hr
+		display: block
+		width: 60px
+		background-color: #fff
+		height: 2px
+		border: none
+		margin-top: 60px
+	.button
+		color: #fff
+		border: 3px solid #fff
+		text-decoration: none
+		padding: 10px 30px
+		margin-top: 50px
+		display: inline-block
+		transition: all .5s ease
+		font-family: 'Montserrat', sans-serif
+		font-size: 14px
+		text-transform: uppercase
+		&:hover
+			background-color: rgba(238, 209, 138, .5)
+
+.header-bottom
+	margin-top: 80px
+	.header-nav-bottom
+		list-style: none
+		padding: 0
+		li
+			display: inline-block
+			width: 270px
+			margin-right: 23px
+			border-top: 3px solid #fff
+			padding-top: 10px
+			position: relative
+			transition: background-color 1s ease // не работает
+			&:last-child
+				margin-right: 0
+			&:hover
+				&:before
+					position: absolute
+					content: ''
+					top: -3px
+					left: 0
+					width: 65px
+					background-color: #f38181
+					height: 3px
+			a
+				color: #fff
+				text-decoration: none
+				text-transform: uppercase
+				font-family: 'Montserrat', sans-serif
+				font-size: 18px
+				span
+					font-family: 'Montserrat', sans-serif
+					font-size: 24px
+					font-weight: bold
+
+
+
+.head-one
+	font-family: 'Kaushan Script', cursive
+	font-size: 24px
+	color: #333
+.head-two
+	font-family: 'Montserrat', sans-serif
+	font-size: 30px
+	font-weight: bold
+	color: #333
+	text-transform: uppercase
+	margin-top: 15px
+	margin-bottom: 30px
+hr.line-content
+	display: block
+	width: 60px
+	background-color: #f38181
+	height: 2px
+	border: none
+	margin-top: 60px
+	margin-bottom: 45px
+
+
+//content
+.content-about
+	margin-top: 75px
+	margin-bottom: 110px
+	text-align: center
+	p
+		display: block
+		max-width: 955px
+		margin: 0 auto
+	.wrap-img
+		padding: 0
+		margin-top: 100px
+		list-style: none
+		width: 100%
+		
+		.box
+			display: inline-block
+			margin-right: 3.8%
+			width: 30%
+			position: relative
+			float: left
+			&:last-child
+				margin-right: 0
+			.mask
+				position: absolute
+				left: -10px
+				top: -11px
+				overflow: hidden
+				width: 100%
+				height: 100%
+				background: linear-gradient(to bottom, darken(#e88282, 10%), #f0d589)
+				padding: 30% 0
+				text-align: center
+				cursor: pointer
+				opacity: 0
+				box-shadow: 11px 10px 0 0 #95e1d3
+				p
+					color: #fff
+					font-family: 'Montserrat', sans-serif
+					font-size: 18px
+					font-weight: bold
+					text-transform: uppercase
+			&:hover
+				.mask
+					opacity: .9
+					transition: opacity .8s ease
+
+.advantages
+	background-color: #95e1d3
+	margin-bottom: 105px
+	&-block
+		float: left
+		vertical-align: middle
+		width: 20%
+		height: 270px
+		text-align: center
+		border-right: 1px solid #b5eae0
+		padding: 7% 0
+
+		&:first-child
+			border-left: 1px solid #b5eae0
+		h3
+			color: #fff
+			font-family: 'Montserrat', sans-serif
+			font-size: 72px
+			font-weight: bold
+		p
+			color: #fff
+			font-family: 'Montserrat', sans-serif
+			font-size: 14px
+			text-transform: uppercase
+
+.services
+	margin-top: 75px
+	margin-bottom: 110px
+	text-align: center
+	&-row
+		margin-bottom: 50px
+	&-col
+		float: left
+		width: 33.3%
+		text-align: left
+		padding-left: 90px
+		background: url(../img/graph.png) no-repeat 36px 2px
+		h3
+			padding-bottom: 15px
+			text-transform: uppercase
+			color: #333
+
+.design
+	margin-top: 75px
+	margin-bottom: 110px
+	text-align: center
+	background: url(../img/bg-content.jpg) no-repeat center center
+	height: 966px
+	position: relative
+	&-content
+		padding-top: 100px
+		position: relative
+		z-index: 1
+		.ipad
+			position: absolute
+			top: 384px
+			left: 350px
+		.iphone
+			position: absolute
+			top: 580px
+			left: 60%
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background: rgba(255, 255, 255, .7)
+		z-index: 0
+		// opacity: .9
+
+
+.create
+	background-color: #fff
+	margin-bottom: 110px
+	.create-text
+		text-align: center
+	.create-content
+		width: 100%
+		.photo-wrap
+			float: left
+			width: 48%
+			margin-right: 4%
+			box-shadow: 0 1.5em 40px 0 rgba(0, 0, 0, 0.2)
+
+
+
+.accordionWrapper
+	padding: 30px
+	background: #fff
+	float: left
+	width: 48%
+	height: 380px
+	box-sizing: border-box
+	box-shadow: 0 1.5em 40px 0 rgba(0, 0, 0, 0.2)
+	.accordionItem
+		float: left
+		display: block
+		width: 100%
+		box-sizing: border-box
+		font-family: 'Montserrat' ,sans-serif
+		max-height: 250px
+		.accordionItemHeading
+			cursor: pointer
+			margin: 0px 0px 10px 0px
+			padding: 10px 10px 10px 60px
+			color: #fff
+			width: 100%
+			border: 1px solid #e5e5e5
+			box-sizing: border-box
+			font-size: 14px
+			color: #333
+			text-transform: uppercase
+			background: url(../img/eculaiz.png) no-repeat 15px center
+	.close
+		.accordionItemContent
+			height: 0px
+			transition: height 1s ease-out
+			transform: scaleY(0)
+			float: left
+			display: block
+	.open
+		.accordionItemContent
+			padding: 20px
+			background-color: #fff
+			border: 1px solid #ddd
+			width: 100%
+			margin: 0px 0px 10px 0px
+			display: block
+			transform: scaleY(1)
+			transform-origin: top
+			transition: transform 0.4s ease
+			box-sizing: border-box
+			overflow: auto
+			max-height: 200px
+		.accordionItemHeading
+			margin: 0
+
+.slider-wrap
+	background-color: #f8f8f8
+	margin-bottom: 100px
+	padding: 70px 0
+	.owl-nav
+		position: relative
+		color: #ccc
+		font-size: 36px
+		z-index: 2
+		top: 55px
+		.owl-prev
+			position: absolute
+			left: 0
+		.owl-next
+			position: absolute
+			right: 0
+.owl-carousel
+	.slide
+		margin: 0 107px 0 107px
+		.slide-text
+			display: inline-block
+			padding-left: 60px
+			width: 80%
+			float: right
+			color: #999999
+			font-family: "Roboto", sans-serif
+			font-size: 24px
+			font-style: italic
+			hr.line-content
+				display: inline-block
+				width: 60px
+				background-color: #f38181
+				height: 2px
+				border: none
+				margin-top: 15px
+				margin-bottom: 10px
+			i
+				font-family: "Kaushan Script"
+				font-size: 24px
+				color: #333
+	.owl-item
+		.slide-img
+			float: left
+			width: 145px
+			height: 145px
+			border: 2px solid #95e1d3
+			padding: 40px
+			img
+				max-width: 100%
+				height: auto
+
+
+// content team
+.content-team
+	margin-top: 75px
+	margin-bottom: 110px
+	text-align: center
+	p
+		display: block
+		max-width: 955px
+		margin: 0 auto
+	.wrap-img
+		padding: 0
+		margin-top: 100px
+		list-style: none
+		width: 100%
+		
+		.box
+			display: inline-block
+			margin-right: 3.8%
+			width: 30%
+			position: relative
+			float: left
+			&:last-child
+				margin-right: 0
+			.mask
+				position: absolute
+				left: -10px
+				top: -11px
+				overflow: hidden
+				width: 100%
+				height: 100%
+				background: linear-gradient(to bottom, darken(#e88282, 10%), #f0d589)
+				padding: 30% 0
+				text-align: center
+				cursor: pointer
+				opacity: 0
+				box-shadow: 10px 10px 0 0 #95e1d3
+				p
+					color: #fff
+					font-family: 'Montserrat', sans-serif
+					font-size: 18px
+					font-weight: bold
+					text-transform: uppercase
+			&:hover
+				.mask
+					opacity: .9
+					transition: opacity .8s ease
