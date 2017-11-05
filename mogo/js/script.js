@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -16,7 +19,24 @@ $('.owl-prev').click(function() {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
+
+
+
+// $('.popup-content').magnificPopup({
+//         type: 'inline'
+//     });
+
+$('.popup-content').magnificPopup({
+    type: 'inline'
+ });
+
+
+
+
 });
+
+
+
 
 
 // Accordion
