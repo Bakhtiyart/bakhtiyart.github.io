@@ -1,0 +1,49 @@
+section.scheme {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  background-color: #ececf1; }
+  section.scheme h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+  section.scheme .features {
+    max-width: 370px;
+    min-width: 300px;
+    background-color: #1187e6;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    height: 365px;
+    margin-bottom: 30px;
+    padding-top: 50px; }
+    section.scheme .features:hover {
+      transition: all .3s;
+      background-color: #0169bd; }
+    section.scheme .features h3 {
+      font-size: 26px; }
+  section.scheme .features-two {
+    width: 565px; }
+
+section.answer {
+  height: 600px; }
+  section.answer h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+  section.answer #accordion h3 {
+    color: #000;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 20px 0;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin: 0;
+    position: relative; }
+    section.answer #accordion h3 img {
+      margin-right: 10px; }
+    section.answer #accordion h3 .arrow {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+  section.answer #accordion .ui-state-active {
+    color: #fff; }
