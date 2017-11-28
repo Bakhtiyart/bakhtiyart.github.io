@@ -14,12 +14,13 @@
       }
     });
 
-    $("h3").on("click", function() {
+
+  });
+
+
+      $(".ask").on("click", function() {
       var src = ($(this).attr("src") === "img/02.png")
                     ? "img/01.png" 
                     : "img/02.png";
       $(this).attr("src", src);
-  });
-
-
   });

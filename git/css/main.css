@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+body {
+  font-family: "Roboto"; }
+
 section.scheme {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -5,7 +27,9 @@ section.scheme {
   background-color: #ececf1; }
   section.scheme h2 {
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-family: "Roboto";
+    font-weight: bold; }
   section.scheme .features {
     max-width: 370px;
     min-width: 300px;
@@ -14,6 +38,7 @@ section.scheme {
     font-family: Roboto, sans-serif;
     color: #fff;
     height: 365px;
+    margin: 0 auto;
     margin-bottom: 30px;
     padding-top: 50px; }
     section.scheme .features:hover {
@@ -22,28 +47,36 @@ section.scheme {
     section.scheme .features h3 {
       font-size: 26px; }
   section.scheme .features-two {
-    width: 565px; }
+    max-width: 565px;
+    min-width: 300px;
+    margin: 15px auto; }
 
 section.answer {
   height: 600px; }
   section.answer h2 {
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-family: "Roboto"; }
+  section.answer #accordion div {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 30px; }
+  section.answer #accordion img {
+    float: left;
+    padding-left: 10px; }
+  section.answer #accordion p {
+    padding-left: 75px; }
   section.answer #accordion h3 {
     color: #000;
     font-size: 16px;
+    font-family: "Roboto";
     border: 1px solid #ccc;
-    padding: 20px 0;
-    padding-left: 20px;
+    padding: 40px 0;
+    padding-left: 70px;
     padding-right: 40px;
     margin: 0;
-    position: relative; }
-    section.answer #accordion h3 img {
-      margin-right: 10px; }
-    section.answer #accordion h3 .arrow {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%); }
+    position: relative;
+    background: url(../img/02.png) no-repeat 20px center, url(../img/arrow2.png) no-repeat 98% center; }
   section.answer #accordion .ui-state-active {
-    color: #fff; }
+    color: #fff;
+    background: url(../img/01.png) no-repeat 20px center, url(../img/arrow.png) no-repeat 98% center;
+    background-color: #1187e6; }
