@@ -1,2 +1,2 @@
-# bakhtiyart.github.io
-хостинг
+# Tayirov Bakhtiyar
+Портфолио
