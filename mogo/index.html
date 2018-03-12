@@ -10,6 +10,7 @@
 	<link href="css/owl.theme.default.min.css" rel="stylesheet">
 	<link href="css/owl.carousel.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/magnific.css">
+	<link rel="stylesheet" href="jquery.mmenu.all.css">
 	<link href="css/style.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
@@ -22,18 +23,21 @@
 		<header>
 			<div class="container">
 				<div class="header-content">
+					<div class="mobile-mnu">
+						<a href="#" class="toggle-mnu hidden-lg"><span></span></a><b>Меню</b>
+					</div>
 					<div class="header-top clearfix">
 						<div class="logo">
 							MoGo
 						</div>
-						<div class="menu-top">
+						<div class="menu-top" id="my-menu">
 							<ul class="nav">
 								<li class="active"><a href="#">About</a></li>
 								<li><a href="#">Service</a></li>
 								<li><a href="#">Work</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Contact</a></li>
-								<li>
+								<!-- <li>
 									<a href="#">
 										<i class="fa fa-shopping-cart"></i>
 									</a>
@@ -42,7 +46,7 @@
 									<a href="#">
 										<i class="fa fa-search" aria-hidden="true"></i>
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -267,60 +271,177 @@
 				<h2 class="head-two">Story about us</h2>
 				<hr class="line-content">
 				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-				<div class="wrap-img clearfix">
+				<div class="wrap-box clearfix">
 					<div class="box">
 						<div class="box-img">
 							<img src="img/mate.jpg" alt="comp">
+							<div class="mask">
+							<div class="social-icon">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>
 						</div>
-						<div class="mask">
-							<img src="img/super.png" alt="super">
-							<p>Super team</p>
+						</div>
+						
+						<div class="box-text">
+							<span>Matthew Dix</span>
+							<i>Graphic Design</i>
 						</div>
 					</div>
 					<div class="box">
 						<div class="box-img">
 							<img src="img/cristopher.jpg" alt="comp">
+							<div class="mask">
+							<div class="social-icon">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>
 						</div>
-						<div class="mask">
-							<img src="img/super.png" alt="super">
-							<p>Super team</p>
+						</div>
+						<div class="box-text">
+							<span>Christopher Campbell</span>
+							<i>Branding/UX design</i>
 						</div>
 					</div>
 					<div class="box">
 						<div class="box-img">
 							<img src="img/michael.jpg" alt="comp">
+							<div class="mask">
+							<div class="social-icon">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>
 						</div>
-						<div class="mask">
-							<img src="img/super.png" alt="super">
-							<p>Super team</p>
+						</div>
+						
+						
+						<div class="box-text">
+							<span>Michael Fertig </span>
+							<i>Developer</i>
 						</div>
 					</div>
 				</div>
-			</div>
-			<a href="#text-popup" class="popup-content">Вызвать окно с текстом</a>
+	</div>
 
 
-				<div id="text-popup" class="white-popup mfp-hide clearfix">
-							<div class="text-modal">
-								<h2>Загородный дом, 150м</h2>
-								<hr>
-								<p>г. Краснодар ул. Красная 23</p>
-								<br>
-								<h3>Задача:</h3>
-								<br>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae quia, alias beatae cumque tenetur, quasi exercitationem! Tempora expedita ratione quo commodi fugiat quasi repellat amet ullam quod, dolorem ducimus.</p>
-								<br>
-								<h3>Оборудование:</h3>
-								<br>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ab perspiciatis quos quis cupiditate excepturi ipsam porro vero pariatur quae, earum temporibus itaque fuga, harum sed nemo maxime, veniam nihil!</p>
-							</div>
 
-							<div class="fotorama slider-modal" data-nav="thumbs">
-								<img src="img/comp.jpg">
-								<img src="img/comp2.jpg">
-								<img src="img/comp3.jpg">
-							</div>
+
+
+
+
+
+<!-- модальное окно с галлерей -->
+
+<div class="slider-gallery">
+	<!-- // modal 1 -->
+									<div id="text-popup" class="white-popup mfp-hide clearfix">
+										<div class="text-modal">
+											<h2>Загородный дом, 150м</h2>
+											<hr>
+											<p><i class="fa fa-map-marker"></i>&nbspг. Краснодар ул. Красная 23</p>
+	
+											<h3>Задача:</h3>
+	
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae quia, alias beatae cumque tenetur, quasi exercitationem! Tempora expedita ratione quo commodi fugi.</p>
+	
+											<h3>Оборудование:</h3>
+	
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ab perspiciatis quos quis cupiditate excepturi ipsam porro vero pariatur quae, earum temporibus itaque fuga, </p>
+												<strong>Срок: </strong><span> 14 рабочих дней</span>
+												<br>
+												<strong>Стоимость под "ключ" : </strong><span> 580 000 рублей</span>
+												<a href="#" class="project"> Нужен подобный проект</a>
+										</div>
+	
+										<div class="fotorama slider-modal" data-nav="thumbs" data-width="100%" data-ratio="600/400">
+											<img src="img/comp.jpg">
+											<img src="img/comp2.jpg">
+											<img src="img/comp3.jpg">
+										</div>
+										<div class="nav">
+											<a href="#" class="popup-content btn btn-prev">
+												<i class="fa fa-arrow-left"></i>
+												предыдущий проект
+											</a>
+											<a href="#text-popup2" class="popup-content btn btn-next">
+												следующий проект
+												<i class="fa fa-arrow-right"></i>
+										</a>
+	
+								</div>
+	
+	<!-- //modal 2 -->
+				<div id="text-popup2" class="white-popup mfp-hide clearfix">
+					<div class="text-modal">
+						<h2>Загородный дом, 150м</h2>
+						<hr>
+						<p>г. Краснодар ул. Красная 23</p>
+	
+						<h3>Задача: 1</h3>
+	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae quia, alias beatae cumque tenetur, quasi exercitationem! Tempora expedita ratione quo commodi fugi.</p>
+	
+						<h3>Оборудование: 1</h3>
+	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ab perspiciatis quos quis cupiditate excepturi ipsam porro vero pariatur quae, earum temporibus itaque fuga, </p>
+					</div>
+	
+						<div class="fotorama slider-modal" data-nav="thumbs">
+							<img src="img/img1.jpg">
+							<img src="img/img2.jpg">
+							<img src="img/img3.jpg">
+						</div>
+						<div class="nav">
+							<a href="#text-popup2" class="popup-content btn btn-prev">
+								<i class="fa fa-arrow-left"></i>
+								предыдущий проект
+							</a>
+							<a href="#text-popup3" class="popup-content btn btn-next">
+								следующий проект
+								<i class="fa fa-arrow-right"></i>
+							</a>
+					</div>
 				</div>
+	<!-- // modal 3 -->
+				<div id="text-popup3" class="white-popup mfp-hide clearfix">
+					<div class="text-modal">
+						<h2>Загородный дом, 150м</h2>
+						<hr>
+						<p>г. Краснодар ул. Красная 23</p>
+	
+						<h3>Задача: 1</h3>
+	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae quia, alias beatae cumque tenetur, quasi exercitationem! Tempora expedita ratione quo commodi fugi.</p>
+	
+						<h3>Оборудование: 1</h3>
+	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ab perspiciatis quos quis cupiditate excepturi ipsam porro vero pariatur quae, earum temporibus itaque fuga, </p>
+					</div>
+	
+						<div class="fotorama slider-modal" data-nav="thumbs">
+							<img src="img/img4.jpg">
+							<img src="img/img5.jpg">
+							<img src="img/img6.jpg">
+						</div>
+						<div class="nav">
+							<a href="#text-popup2" class="popup-content btn btn-prev">
+								<i class="fa fa-arrow-left"></i>
+								предыдущий проект
+							</a>
+							<a href="#" class="popup-content btn btn-next">
+								следующий проект
+								<i class="fa fa-arrow-right"></i>
+							</a>
+					</div>
+				</div>
+</div>
+
 		</div>
 
 
@@ -329,18 +450,16 @@
 		<script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script> 
 		<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />  -->
 
-<link  href="css/fotorama.css" rel="stylesheet">
-<script src="js/fotorama.js"></script> 
+<!-- <link  href="css/fotorama.css" rel="stylesheet">
+<script src="js/fotorama.js"></script>  -->
 
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
-		<!-- <link rel="stylesheet" href="css/animate.css"> -->
-       <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB --> 
-
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	<script src="js/jquery.mmenu.all.js">	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

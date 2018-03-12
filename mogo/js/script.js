@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function(){
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -11,27 +9,34 @@ owl.owlCarousel({
 });
 // Go to the next item
 $('.owl-next').click(function() {
-    owl.trigger('next.owl.carousel');
+		owl.trigger('next.owl.carousel');
 })
 // Go to the previous item
 $('.owl-prev').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl.trigger('prev.owl.carousel', [300]);
 })
 
 
 
-// $('.popup-content').magnificPopup({
-//         type: 'inline'
-//     });
-
 $('.popup-content').magnificPopup({
-    type: 'inline'
+		type: 'inline'
  });
 
 
+//menu burger
 
+$("#my-menu").mmenu({
+	navbar: {
+		extensions : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
+		title: "Меню"
+	}
+});
+
+$("#my-menu").mmenu({
+	extensions: ["theme-dark"]
+})
 
 });
 
