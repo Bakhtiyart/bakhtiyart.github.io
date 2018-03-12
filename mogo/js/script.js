@@ -20,23 +20,13 @@ $('.owl-prev').click(function() {
 
 
 
-$('.popup-content').magnificPopup({
-		type: 'inline'
- });
+// $('.popup-content').magnificPopup({
+// 		type: 'inline'
+//  });
 
 
 //menu burger
 
-$("#my-menu").mmenu({
-	navbar: {
-		extensions : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
-		title: "Меню"
-	}
-});
-
-$("#my-menu").mmenu({
-	extensions: ["theme-dark"]
-})
 
 });
 
