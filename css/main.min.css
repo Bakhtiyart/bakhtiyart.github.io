@@ -224,6 +224,12 @@ b, strong {
   position: relative;
 }
 
+@media (max-width: 1769.98px) {
+  .header-top .right-menu {
+    width: 175px;
+  }
+}
+
 @media (max-width: 1359.98px) {
   .header-top .right-menu {
     width: auto;
@@ -335,7 +341,13 @@ b, strong {
 
 @media (max-width: 1769.98px) {
   .header .menu-wrap {
-    margin-left: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1359.98px) {
+  .header .menu-wrap {
+    margin-left: 10px;
   }
 }
 
@@ -404,7 +416,7 @@ b, strong {
 }
 
 .header .navbar .nav-link {
-  font-family: HeliosCond;
+  font-family: Helios;
   color: #000;
 }
 
