@@ -470,6 +470,10 @@ b, strong {
   color: #e35c42;
 }
 
+.header .slider {
+  overflow: hidden;
+}
+
 .header .slider__item {
   background-repeat: no-repeat;
   background-size: cover;
