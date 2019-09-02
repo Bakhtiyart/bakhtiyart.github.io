@@ -71,10 +71,13 @@
 					        <a class="nav-link" href="#">Пресс-центр</a>
 					      </li>
 					    </ul>
-					    <div class="right-menu">
-					    	<form class="form-inline my-2 my-lg-0">
-						      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					    <div class="right-menu"> 
+					    	<form class="form-inline header-top__form my-2 my-lg-0">
+					    		<div class="search-wrap">
+					    			<input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+					    		</div>
 						      <button class="btn right-menu__btn my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						    	<div class="search-close"><i class="fa fa-close"></i></div>
 						    </form>
 								<div class="language dropdown">
 								  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -324,6 +327,9 @@
 	<div class="footer-top">
 			<div class="container">
 		<div class="row justify-content-center align-items-center">
+			<div class="col-md-4 text-center d-md-none">
+				<a href="#!" class="footer-logo"><img src="img/white_logo.png" alt="logo"></a>
+			</div>
 			<div class="col-md-4">
 				<div class="footer-info">
 					<div class="footer-row">
@@ -336,11 +342,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 text-center">
+			<div class="col-md-4 text-center d-sm-none d-md-block">
 				<a href="#!" class="footer-logo"><img src="img/white_logo.png" alt="logo"></a>
 			</div>
 			<div class="col-md-4">
-				<div class="footer-info align-items-end">
+				<div class="footer-info align-items-md-end align-items-sm-center">
 					<div class="footer-row">
 						<span>Copyright © 2019. АО «НГК «Тау-Кен Самрук»</span>
 					</div>
