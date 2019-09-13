@@ -14,7 +14,10 @@ $(function() {
         }
     );
     wow.init();
-
+    $(".hamburger").click(function(){
+        $(this).toggleClass('is-active');
+        $('.menu').toggleClass('menu-active');
+    });
 
     $('.case-slider').slick({
         dots: true,
@@ -24,4 +27,6 @@ $(function() {
         prevArrow: $('.prev-button'),
         nextArrow: $('.next-button')
     });
+
+
 });
