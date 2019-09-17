@@ -41,10 +41,15 @@ $(function() {
 
     });
 
-    $(".hamburger").click(function(){
+    $("#header-hamburger").click(function(){
         $(this).toggleClass('is-active');
         $('.navbar').toggleClass('menu-active');
         $('.header-top-wrap').toggleClass("background-blue");
+    });
+
+    $("#footer-hamburger").click(function(){
+        $(this).toggleClass('is-active');
+        $('.footer-phone-wrap').toggleClass('is--active');
     });
 
     $('.case-slider').slick({

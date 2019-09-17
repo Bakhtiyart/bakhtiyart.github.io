@@ -42,19 +42,19 @@
                         </div>
                     </nav>
                     <div class="wrapper">
-                        <button class="hamburger hamburger--collapse" type="button">
+                        <button class="hamburger hamburger--collapse" id="header-hamburger" type="button">
                           <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                           </span>
-                        </button> 
+                        </button>
                         <div class="phone-wrap phone-wrap_desktop">
                             <a href="tel:+79001234567" class="phone">+7(900)-123-45-67</a>
                             <a href="#!" class="btn-callback">обратный звонок</a>
                         </div>
                     </div>
-                </div>  
-            </div> 
-        </div>  
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header-content">
                 <div class="header-content__block">
@@ -68,11 +68,11 @@
                             <div class="form-groups">
                                 <input type="text" class="form-groups__input form-groups__input_border-right" placeholder="Введите Ваше имя">
                                 <input type="tel" class="form-groups__input" placeholder="Ваш номер телефона">
-                                <button class="form-groups__btn">Отправить</button>                                
+                                <button class="form-groups__btn">Отправить</button>
                             </div>
                             <span class="mt">В течение 15 минут с вами свяжется менеджер и подробно проконсультирует</span>
                         </form>
-                        
+
                     </div>
                 </div>
                 <div class="header-content__img-wrap">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="features__text">
                             <p>100%</p>
-                            <p>постоплата</p> 
+                            <p>постоплата</p>
                         </div>
                     </div>
                     <div class="features__item">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="features__text">
                             <p>Настроим</p>
-                            <p>аналитику</p>               
+                            <p>аналитику</p>
                         </div>
                     </div>
                 </div>
@@ -139,40 +139,40 @@
                 <h3 class="block-title">Опыт работы с крупнейшими брендами</h3>
                 <ul class="brands">
                     <li>
-                        <span class="first" style="background-image: url(img/brands/dyatkovo-logo.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/dyatkovo-logo2.png)"></span>
+                        <img class="first" src="img/brands/dyatkovo-logo.png">
+                        <img class="second" src="img/brands/dyatkovo-logo2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/kuhni-anons.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/kuhni-anons3.png)"></span>   
+                        <img class="first" src="img/brands/kuhni-anons.png">
+                        <img class="second" src="img/brands/kuhni-anons2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/wonderwood.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/wonderwood2.png)"></span>
+                        <img class="first" src="img/brands/wonderwood.png">
+                        <img class="second" src="img/brands/wonderwood2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/jeep.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/jeep2.png)"></span>
+                        <img class="first" src="img/brands/jeep.png">
+                        <img class="second" src="img/brands/jeep2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/ko.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/ko2.png)"></span>
+                        <img class="first" src="img/brands/ko.png">
+                        <img class="second" src="img/brands/ko2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/logistik.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/logistik2.png)"></span>
+                        <img class="first" src="img/brands/logistik.png">
+                        <img class="second" src="img/brands/logistik2.png">
                     </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/doeco.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/doeco2.png)"></span>
-                    </li>  
+                        <img class="first" src="img/brands/doeco.png">
+                        <img class="second" src="img/brands/doeco2.png">
+                    </li>
                     <li>
-                        <span class="first" style="background-image: url(img/brands/mersedes.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/mersedes2.png)"></span>
+                        <img class="first" src="img/brands/mersedes.png">
+                        <img class="second" src="img/brands/mersedes2.png">
                     </li>
                     <li >
-                        <span class="first" style="background-image: url(img/brands/pik.png)"></span>
-                        <span class="second" style="background-image: url(img/brands/pik2.png)"></span>
+                        <img class="first" src="img/brands/pik.png">
+                        <img class="second" src="img/brands/pik2.png">
                     </li>
                 </ul>
             </div>
@@ -390,6 +390,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-nav">
@@ -404,10 +405,15 @@
                         <li class="menu__item"><a href="#!" class="menu__link">Наша команда</a></li>
                         <li class="menu__item"><a href="#!" class="menu__link">Кейсы</a></li>
                     </ul>
-                    <div class="phone-wrap">
+                    <div class="footer-phone-wrap">
                         <a href="tel:+79001234567" class="phone">+7(900)-123-45-67</a>
                         <a href="#!" class="btn-callback">обратный звонок</a>
                     </div>
+                    <button class="hamburger hamburger--collapse" id="footer-hamburger" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </button>
                 </nav>
             </div>
         </div>
