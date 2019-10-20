@@ -6447,6 +6447,10 @@ strong {
   margin-bottom: 90px;
 }
 
+.header {
+  position: relative;
+}
+
 .header .overlay {
   position: absolute;
   top: 0;
@@ -6477,7 +6481,6 @@ strong {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .header .navbar .logo {
