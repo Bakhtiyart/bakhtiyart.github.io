@@ -8,7 +8,7 @@ $(function() {
 			$('.overlay').removeClass('active');
 		 setTimeout(function() {
 			$('.menu').removeClass('show');
-		 }, 500);
+		 }, 800);
 		}
 		else{
 			$('.menu').addClass('show');
@@ -47,7 +47,7 @@ $(function() {
             $('a[href^="#"]').parent().removeClass('menu__item--active');
             anchor.parent().addClass('menu__item--active');
             $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top - 80
+                scrollTop: $(anchor.attr('href')).offset().top
             }, 777);
             e.preventDefault();
             return false;

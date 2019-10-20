@@ -6503,17 +6503,17 @@ strong {
   background: #000000;
   padding-top: 50px;
   padding-right: 40px;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .header .menu li {
   margin-bottom: 25px;
   text-align: right;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .header .menu li:hover {
@@ -6530,9 +6530,9 @@ strong {
 }
 
 .header .menu.active {
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
@@ -6610,7 +6610,7 @@ strong {
 }
 
 .about__desc img {
-  max-width: 352px;
+  max-width: 290px;
   margin: 90px 0;
 }
 
@@ -6618,6 +6618,10 @@ strong {
   text-align: center;
   font-size: 24px;
   line-height: 1.5;
+}
+
+.portfolio {
+  margin-bottom: 90px;
 }
 
 .portfolio h2.portfolio-title {
@@ -6700,8 +6704,12 @@ strong {
           align-items: flex-end;
 }
 
+.footer .logo {
+  width: 150px;
+}
+
 .footer .address {
-  font-size: 24px;
+  font-size: 18px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6762,6 +6770,6 @@ strong {
     font-size: 28px;
   }
   .about__desc img {
-    width: 310px;
+    width: 280px;
   }
 }
