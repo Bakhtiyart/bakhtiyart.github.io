@@ -6502,10 +6502,10 @@ strong {
   right: 0;
   top: 100px;
   width: 236px;
-  height: 415px;
   background: #000000;
   padding-top: 50px;
   padding-right: 40px;
+  padding-bottom: 50px;
   -webkit-transition: all .8s ease-in-out;
   -o-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
