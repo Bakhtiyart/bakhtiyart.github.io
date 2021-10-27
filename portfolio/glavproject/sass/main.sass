@@ -1,0 +1,782 @@
+@import vars
+@import fonts
+@import libs
+@import container
+@import header
+@import fixed-menu
+@import hamburgers
+@import burger-icon
+@import mobile-menu
+@import info-block
+
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+  &:required:valid
+    border-color: green
+
+body
+  font-size: 18px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: Roboto, sans-serif
+  overflow-x: hidden
+  font-weight: 400
+  color: $text
+  background-image: linear-gradient(rgba(255,255,255, 0.4) 0, rgba(255,255,255, 0.4) 100%), url(../img/bg-body.png)
+  background-position: center center, center center
+  background-size: cover, 500px
+
+  // background-image: url(../img/page-bg.png), url(../img/page-bg-2.png), url(../img/page-bg-3.png)
+  // background-position: 0 600px, right 2000px, left 2500px
+  // background-size: 500px, 749px, 636px
+  // background-repeat: repeat-y, no-repeat, no-repeat
+  +media-breakpoint-down(lg)
+    font-size: 16px
+  // &.inner-page
+  //   background-image: none
+  // &.card-page
+  //   background-image: url(../img/card-page-bg.png)
+  //   background-position: right 600px
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+  // &.reviews-page
+  //   background-image: url(../img/reviews/reviews-page-bg.png)
+  //   background-position: center center
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+  // &.cooperation-page
+  //   background-image: url(../img/page-bg.png), url(../img/page-bg-2.png), url(../img/page-bg-3.png)
+  //   background-position: 0 600px, right 2000px, left 2500px
+  //   background-size: 500px, 749px, 636px
+  //   background-repeat: repeat-y, no-repeat, no-repeat
+  // &.catalog-page
+  //   background-image: url(../img/catalog-bg.png)
+  //   background-position: right 800px
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+  // &.cart-page
+  //   background-image: url(../img/cart-page-bg.png)
+  //   background-position: right 800px
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+  // &.office-page
+  //   background-image: url(../img/cabinet.png)
+  //   background-position: center
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+  // &.partners-page
+  //   background-image: url(../img/parners-bg.png)
+  //   background-position: center 600px
+  //   background-size: 1000px
+  //   background-repeat: repeat-y
+  // &.news-post-page
+  //   background-image: url(../img/card-page-bg.png)
+  //   background-position: right 600px
+  //   background-size: 1000px
+  //   background-repeat: no-repeat
+*
+  outline: transparent none!important
+
+
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+
+.text-center
+  text-align: center
+// Custom Sass
+  
+.container
+  max-width: 1345px
+  padding:
+    right: $gutter/2
+    left: $gutter/2
+  margin:
+    left: auto
+    right: auto
+  +media-breakpoint-down(lg)
+    max-width: $max-width-container-lg
+
+  
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.example-grid
+  display: grid
+  grid-gap: $gutter
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: "left right"
+  > div:first-child
+    grid-area: left
+  > div:last-child
+    grid-area: right
+  +media-breakpoint-down(xs)
+    display: block
+    > div
+      padding: $gutter/2 0
+
+.example-img
+  width: 100%
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+  background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+
+
+.title
+  font-size: 36px
+  color: $title-color
+  padding-left: 75px
+  font-weight: 900
+  position: relative
+  margin-bottom: 40px
+  margin-left: 40px
+  +media-breakpoint-down(md)
+    font-size: 32px
+    margin:
+      left: auto
+      right: auto
+    padding: 0
+    text-align: center
+  +media-breakpoint-down(sm)
+    margin-bottom: 20px
+  &:after
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    content: ''
+    display: block
+    box-shadow: 0 0 4px rgba(226, 212, 193, 0.47)
+    border-radius: 3px
+    background-color: #d24a43
+    width: 54px
+    height: 6px
+    +media-breakpoint-down(md)
+      display: none
+.inner-page
+  .title
+    margin-bottom: 75px
+    margin-left: 0
+    +media-breakpoint-down(sm)
+      margin-bottom: 30px
+.title_white
+  color: #ffffff
+
+.title_white_line
+  padding-left: 0
+  padding-right: 75px
+  margin-left: 0
+  +media-breakpoint-down(sm)
+    padding-right: 0
+  &:after
+    background-color: #ffffff
+    left: 370px
+    width: 63px
+
+.page-title
+  font-size: 45px
+  color: $title-color
+  font-weight: 900
+  +media-breakpoint-down(sm)
+    font-size: 24px
+    text-align: center
+.page-subtitle
+  font-size: 37px
+  font-weight: 900
+  color: $title-color
+.button
+  border-radius: 28px
+  background-color: #d24a43
+  color: #ffffff
+  font-size: 21px
+  font-weight: 500
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 70px
+  transition: all .3s ease-out
+  border: transparent
+  max-width: 300px
+  padding: 5px 40px
+  +media-breakpoint-down(md)
+    margin: 0 auto
+  &:hover
+    transition: all .3s ease-out
+    text-decoration: none
+    color: #ffffff
+    box-shadow: 0 0 11px 10px rgba(180, 95, 95, 0.44)
+
+
+.breadcrumb
+  list-style: none
+  padding: 0
+  margin-top: 40px
+  margin-bottom: 40px
+  transition: all .3s ease-out
+  &__item
+    display: inline-block
+  &__link
+    color: $text
+  .fa-arrow-circle-left
+    color: $accent
+
+
+
+
+
+
+.catalog
+  padding: 100px 0
+  +media-breakpoint-down(sm)
+    padding: 20px 0
+  &-inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  &__item
+    margin:
+      top: 50px
+      right: 10px
+      bottom: 50px
+      left: 10px
+    +media-breakpoint-down(sm)
+      margin:
+        top: 20px
+        right: auto
+        bottom: 10px
+        left: auto
+    &:nth-child(3n + 4), &:first-child
+      margin:
+        left: 20px
+      +media-breakpoint-down(sm)
+        margin:
+          left: auto
+
+
+.catalog-box
+  width: 375px
+  height: 375px
+  box-shadow: 8px 14px 25px 4px rgba(89, 96, 116, 0.32)
+  border-radius: 20px
+  overflow: hidden
+  transition: all .3s ease-out
+  +media-breakpoint-down(lg)
+    width: 221px
+    height: 265px
+  +media-breakpoint-down(sm)
+  &:hover
+    transition: all .3s ease-out
+    cursor: pointer
+    transform: scale(1.1)
+    .catalog-box__desc
+      box-shadow: 8px 14px 25px 4px rgba(89, 96, 116, 0.32)
+      background-image: linear-gradient(-38deg, #e8ddd3 0%, #afafbc 18%, #14418d 100%)
+    p
+      color: #ffffff
+    a
+      color: #ffffff
+      &:after
+        background-color: #ffffff
+
+
+  &__img-wrap
+    width: 100%
+    height: 150px
+    overflow: hidden
+    background: #ffffff
+    +media-breakpoint-up(xl)
+      height: 254px
+    img
+      width: 100%
+  &__desc
+    background-color: #d0d0d0
+    background-image: linear-gradient(-38deg, #cdd1e0 0%, #b2bcd9 18%, #9dadd5 100%)
+    height: 100%
+    padding: 23px 0 0 15px
+    p
+      font-weight: 700
+      font-size: 20px
+      position: relative
+      padding-left: 8px
+      margin-bottom: 0
+      line-height: 1.3
+      +media-breakpoint-up(xl)
+        font-size: 29px
+      +media-breakpoint-down(sm)
+        font-size: 20px
+      &:before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        left: 0
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        top: 50%
+        transform: translateX(-50%)
+        background-color: #677190
+    a
+      font-size: 21px
+      font-weight: 100
+      color: $text
+      margin-left: 8px
+      position: relative
+      +media-breakpoint-up(xl)
+        font-size: 25px
+      +media-breakpoint-down(sm)
+        font-size: 20px
+      &:after
+        position: absolute
+        content: ''
+        bottom: -3px
+        left: 0
+        width: 100%
+        height: 2px
+        border-radius: 1px
+        background-color: #484848
+        opacity: 0.15
+      &:hover
+        text-decoration: none
+
+
+
+.project
+  padding: 100px 0
+  background-color: rgba(#fafafa, 0.8)
+  +media-breakpoint-down(sm)
+    padding: 30px 0
+.project-slider
+  overflow: hidden
+  padding-bottom: 70px
+  &__item
+    width: 295px
+    height: 282px
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    margin-right: 34px
+    margin-bottom: 65px
+    transition: all .3s ease-out
+    overflow: hidden
+    position: relative
+    +media-breakpoint-down(sm)
+      margin: 0 10px
+      margin-bottom: 40px
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(255,255,255, 0.6)
+    &:hover
+      opacity: 0.8
+      transition: all .3s ease-out
+      text-decoration: none
+      &:after
+        display: none
+  &__content
+    position: relative
+    z-index: 3
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    transition: all .3s ease-out
+    &:hover
+      transition: all .3s ease-out
+      background-image: linear-gradient(to top, rgba(#0b3195, 0.6) 0%, rgba(#e5d9ce, 0.6)  100%)
+      .project-slider__name
+        color: #ffffff
+        font-size: 50px
+        font-weight: 700
+        margin-bottom: 0
+        text-align: center
+      .project-slider__address
+        color: #ffffff
+        font-size: 29px
+        font-weight: 300
+        margin-bottom: 0
+        text-align: center
+        width: 100%
+  &__name
+    font-size: 38px
+    color: $text
+    font-weight: 700
+  &__address
+    color: $text
+    font-weight: 300
+    width: 200px
+  .slick-dots
+    bottom: 0
+    li
+      width: 167px
+      height: 10px
+      margin: 0 25px
+      +media-breakpoint-down(md)
+        width: 80px
+        margin: 0 10px
+      +media-breakpoint-down(sm)
+        width: 30px
+        margin: 0 5px
+      &.slick-active
+        button
+          background-color: #facf5a
+      button
+        max-width: 167px
+        width: 100%
+        height: 10px
+        box-shadow: 0 0 16px rgba(217, 201, 191, 0.46)
+        border-radius: 5px
+        background-color: #f4ede4
+        overflow: hidden
+        &:before
+          width: 100%
+          height: 100%
+          content: ''
+
+.certificate
+  padding: 100px 0 170px
+  // background: #ffffff
+  +media-breakpoint-down(sm)
+    padding: 30px 0
+  &-slider
+    overflow: hidden
+  .slick-prev, .slick-next
+    z-index: 3
+    width: 25px
+    height: 25px
+  .slick-prev
+    left: 0
+  .slick-next
+    right: 0
+  .slick-prev:before
+    color: black
+    font-size: 22px
+  .slick-next:before
+    color: black
+    font-size: 22px
+  &-slider
+    max-width: 1066px
+    width: 100%
+    margin: 0 auto
+    &__item
+      text-align: center
+      img
+        max-width: 100%
+        width: 100%
+        height: auto
+.about
+  padding: 100px 0
+  // background-image: url(../img/about-bg.png)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+  &:after
+    background-color: rgba(#647eb7, 0.9)
+
+  .container
+    position: relative
+    z-index: 3
+  &-description
+    p
+      color: #ffffff
+      // font-size: 25px
+      font-weight: 300
+
+
+.partner
+  padding: 100px 0 170px
+  background: #ffffff
+  +media-breakpoint-down(sm)
+    padding: 30px 0
+  .partner-slider
+    overflow: hidden
+    &__item
+      margin-bottom: 65px
+      text-align: center
+      img
+        margin: 0 auto
+  .slick-dots
+    li
+      width: 96px
+      height: 10px
+      margin: 0 25px
+      +media-breakpoint-down(md)
+        width: 50px
+        margin: 0 10px
+      &.slick-active
+        button
+          background-color: #facf5a
+      button
+        max-width: 100%
+        width: 100%
+        height: 10px
+        box-shadow: 0 0 16px rgba(217, 201, 191, 0.46)
+        border-radius: 5px
+        background-color: #f4ede4
+        overflow: hidden
+        &:before
+          width: 100%
+          height: 100%
+          content: ''
+
+.footer
+  &-inner
+    background-color: #1a376f
+    height: 223px
+    +media-breakpoint-down(md)
+      height: auto
+  .container
+    height: 100%
+  .row
+    justify-content: flex-start
+    align-items: center
+    height: 100%
+    +media-breakpoint-down(md)
+      justify-content: center
+    +media-breakpoint-down(sm)
+      justify-content: center
+  &-logo
+    width: 273px
+    height: 100%
+    display: flex
+    align-items: center
+    +media-breakpoint-down(lg)
+      width: 200px
+    +media-breakpoint-down(md)
+      width: 180px
+    img
+      width: 100%
+  &-menu
+    list-style: none
+    padding: 0
+    //margin: 55px 0 0 70px
+    margin-left: 70px
+    position: relative
+    +media-breakpoint-down(lg)
+      margin-left: 40px
+    +media-breakpoint-down(md)
+      margin-left: 20px
+      margin-right: 20px
+    +media-breakpoint-down(sm)
+      margin:
+        left: auto
+        right: auto
+        top: 20px
+    &:after
+      content: ''
+      position: absolute
+      right: -114px
+      top: 50%
+      transform: translateY(-50%)
+      width: 1px
+      height: 144px
+      border-radius: 1px
+      background-color: #ffffff
+      opacity: 0.4
+      +media-breakpoint-down(lg)
+        right: -100px
+      +media-breakpoint-down(md)
+        display: none
+    &__item
+      display: block
+      +media-breakpoint-down(sm)
+        text-align: center
+    &__link
+      font-weight: 500
+      color: #ffffff
+      &:hover
+        text-decoration: none
+        color: #a2a2a2
+  &-button
+    display: flex
+    font-size: 21px
+    font-weight: 500
+    color: #ffffff
+    text-decoration: none
+    text-align: center
+    overflow: hidden
+    margin-bottom: 23px
+    margin-top: 0
+    padding: 2px
+    height: auto
+    background: linear-gradient(45deg, #fce9d2, #ff6168)
+    position: relative
+    z-index: 1
+    +media-breakpoint-down(lg)
+      font-size: 18px
+    +media-breakpoint-down(md)
+      margin-bottom: 10px
+    +media-breakpoint-down(sm)
+      margin:
+        left: auto
+        right: auto
+    span
+      content: ''
+      width: 100%
+      height: 100%
+      // position: absolute
+      z-index: 2
+      display: block
+      background: $accent
+      border-radius: 23px
+      padding: 5px 30px
+
+    &:hover
+      text-decoration: none
+
+  &-contacts
+    margin-left: auto
+    color: #ffffff
+    margin-right: 80px
+    +media-breakpoint-down(md)
+      margin-right: 10px
+      margin-left: 0
+    +media-breakpoint-down(sm)
+      margin-right: 0
+    .phone
+      text-decoration: none
+      color: #ffffff
+      font-weight: 700
+      margin-bottom: 23px
+      display: flex
+      align-items: center
+      +media-breakpoint-down(lg)
+        // font-size: 21px
+      +media-breakpoint-down(md)
+        margin-bottom: 10px
+        margin-top: 10px
+      +media-breakpoint-down(sm)
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+      .fa
+        font-size: 25px
+        +media-breakpoint-down(sm)
+          font-size: 18px
+          margin:
+            right: 5px
+      &:hover
+        color: #a2a2a2
+        text-decoration: none
+  .address
+    +media-breakpoint-down(sm)
+      margin-bottom: 10px
+    .fa
+      +media-breakpoint-down(sm)
+        font-size: 25px
+    &__item
+      width: 401px
+      +media-breakpoint-down(lg)
+        width: 300px
+      +media-breakpoint-down(md)
+        width: 240px
+      +media-breakpoint-down(sm)
+        text-align: center
+
+
+
+  &-bottom
+    height: 65px
+    background: #ffffff
+    .container
+      align-items: center
+      display: flex
+      justify-content: center
+    p
+      font-weight: 500
+      margin-bottom: 0
+
+@import card-page
+@import reviews-page
+@import cooperation
+@import catalog
+@import contacts
+@import cart-page
+@import office
+
+.content-404
+  background-image: url(../img/404-bg.png)
+  background-size: 959px
+  background-position: center
+  background-repeat: no-repeat
+  padding: 100px 0
+  height: 687px
+  &__img-wrap
+    margin: 0 auto
+    max-width: 600px
+    width: 100%
+    p
+      text-align: center
+      font-size: 45px
+      color: #29499b
+      font-weight: 900
+      &:first-child
+        text-align: right
+        margin-right: 55px
+
+
+@import certificate.sass
+@import thankyou.sass
+
+
+.popup-order
+  background: #ffffff
+  max-width: 80%
+  +media-breakpoint-down(sm)
+    max-width: 100%
+  .row-form
+    flex-direction: row
+  .form-desc
+    flex-direction: column
+  .form-upload-file
+    flex-direction: column
+    .form-content__link-file
+      margin: 0 auto
+      text-align: center
+      margin-top: 20px

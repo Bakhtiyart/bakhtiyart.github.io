@@ -1,0 +1,93 @@
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+@import vars
+.personal-page-content
+  margin-bottom: 100px
+
+.personal-content-wrap
+  display: flex
+  justify-content: space-between
+  +media-breakpoint-down(md)
+    flex-direction: column-reverse
+    align-items: center
+.personal-content
+  width: 100%
+.personal-table
+  border: 2px solid #f3f3f3
+  max-width: 820px
+  width: 100%
+  +media-breakpoint-down(lg)
+    max-width: 760px
+  +media-breakpoint-down(md)
+    margin: 0 auto
+    margin-top: 30px
+
+  &__row
+    display: flex
+    justify-content: center
+    &:last-child
+      .personal-table__cell 
+        border-bottom: none
+  &__cell-title
+    border-right: 2px solid #f3f3f3
+    border-bottom: 2px solid #f3f3f3
+    max-width: 285px
+    width: 100%
+    text-align: center
+    &:last-child
+      border-right: none
+    &:first-child
+      width: 250px
+  &__cell
+    border-right: 2px solid #f3f3f3
+    border-bottom: 2px solid #f3f3f3
+    min-height: 100px
+    max-width: 285px
+    width: 100%
+    &:last-child
+      border-right: none
+    &:first-child
+      width: 250px
+.personal-sidebar
+  max-width: 440px
+  width: 100%
+  +media-breakpoint-down(lg)
+    width: 400px
+  +media-breakpoint-down(md)
+    width: auto
+
+.sidebar-table
+  margin-top: 30px
+  width: 100%
+  &__row
+    border: 2px solid #f3f3f3
+    border-bottom: none
+    &:last-child
+      border-bottom: 2px solid #f3f3f3
+  &__cell
+    padding: 10px 0 10px 20px
+    display: flex
+    align-items: center
+    .fa
+      margin-right: 20px
+      opacity: 0
+      font-size: 32px
+      transform: translateX(10px)
+      transition: all .3s ease-out
+    &:hover
+      cursor: pointer
+        transition: all .3s ease-out
+      .fa
+        transform: translateX(0)
+        opacity: 1
+    &.active
+      .fa
+        transform: translateX(0)
+        opacity: 1
+    img
+      margin-right: 20px
+    .user
+      width: 37px
+    .handsnake
+      width: 44px
+    .phone
+      width: 30px

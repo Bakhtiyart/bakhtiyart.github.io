@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Карточка товара</title>
+  <meta name="description" content="Главпроект">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="icon" href="img/favicon.png">
+  <meta property="og:image" content="img/@1x/preview.jpg">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/tooltip.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body class="inner-page card-page">
+
+  <div class="overlay"></div>
+  <div class="fixed-menu-overlay"></div>
+  <header class="header">
+    <div class="header-top">
+      <div class="header-top-inner container">
+        <a class="logo" href="#!"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+        <div class="header-address address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <div class="address-inner">
+            <span class="address__item">Москва, 82 км. МКАД,</span>
+            <span class="address__item">Б.Ц. Румянцево, корп. Е</span>
+          </div>
+        </div>
+        <div class="header-phone phone">
+          <a href="tel:+8 (800) 555-55-55">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>+8 (800) 555-55-55</span>
+          </a>
+        </div>
+        <div class="header-sign-in sign-in">
+          <a class="sign-in__item" href="#!"><span>Войти</span> <img class="sign-in__img" src="img/login.png" alt="Войти"></a>
+          <a class="sign-in__item" href="#!">Регистрация</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle">
+      <button class="hamburger hamburger--squeeze" id="mobileMenuIcon" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <a class="logo-mobile" href="#!">
+        <img class="logo__img" src="img/logo_white.png" alt="logo">
+      </a>
+      <div class="mobile-menu-wrap">
+        <div class="header-contacts">
+          <a class="logo" href="#!"><img class="logo__img" src="img/logo-mobile.png" alt="logo">
+            <span>Главпроект-22</span></a>
+          <div class="address">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <div class="address-inner">
+              <span class="address__item">Москва, 82 км. МКАД,</span>
+              <span class="address__item">Б.Ц. Румянцево, корп. Е</span>
+            </div>
+          </div>
+          <div class="phone">
+            <a href="tel:+8 (800) 555-55-55">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+8 (800) 555-55-55</span>
+            </a>
+          </div>
+          <div class="sign-in">
+            <a class="sign-in__item" href="#!"><span>Войти</span> </a>
+            <a class="sign-in__item" href="#!">Регистрация</a>
+          </div>
+        </div>
+      <ul class="header-middle-menu mobile-menu">
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">Главная</a></li>
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">О компании</a></li>
+        <li class="mobile-menu__item">
+          <a href="#!" class="mobile-menu__link">
+            Каталог опалубки <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu sub-menu-mobile">
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+          </ul>
+        </li>
+                <li class="mobile-menu__item">
+          <a href="#!" class="mobile-menu__link">Формы сотрудничества <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul class="sub-menu sub-menu-mobile">
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">Акции</a></li>
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">Информация </a></li>
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">Контакты</a></li>
+        <li class="mobile-menu__item"><a href="#!" class="mobile-menu__link">Доставка</a></li>
+      </ul>
+      </div>
+
+      <ul class="menu header-middle-menu container">
+        <li class="menu__item"><a href="#!" class="menu__link">Главная</a></li>
+        <li class="menu__item"><a href="#!" class="menu__link">О компании</a></li>
+        <li class="menu__item">
+          <a href="#!" class="menu__link">
+            Каталог опалубки <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+          </ul>
+        </li>
+                <li class="menu__item">
+          <a href="#!" class="menu__link">Формы сотрудничества<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+            <li class="sub-menu__item"><a class="sub-menu__link" href="#!">Комплектующие для стен и колонн</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a href="#!" class="menu__link">Акции</a></li>
+        <li class="menu__item"><a href="#!" class="menu__link">Информация </a></li>
+        <li class="menu__item"><a href="#!" class="menu__link">Контакты</a></li>
+        <li class="menu__item"><a href="#!" class="menu__link">Доставка</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  
+<div class="page">
+  <section class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"> <a class="breadcrumb__link" href="#!"><i class="fa fa-arrow-circle-left"></i></a></li>
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#!">Главная</a> / </li>
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#!">Опалубка колонн</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <h2 class="page-title">Опалубка колонн</h2>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <div class="product__img-wrap single-slider">
+            <div class="single-slider__item" style="background-image: url(img/card-page/632d61_6cea25f5a0b14e74844e3bfe9b2ea25c_mv2_d_3916_2634_s_4_2.jpg)">
+            </div>
+            <div class="single-slider__item" style="background-image: url(img/card-page/giraffe-4312090_1920.jpg)">
+            </div>
+            <div class="single-slider__item" style="background-image: url(img/card-page/mark-basarab-z8ct_Q3oCqM-unsplash.jpg)">
+            </div>
+            <div class="single-slider__item" style="background-image: url(img/card-page/milada-vigerova-cX0Zgk8_v18-unsplash.jpg)">
+            </div>
+            <div class="single-slider__item" style="background-image: url(img/card-page/visovac-4028988_1920.jpg)">
+            </div>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="product-slider">
+            <div class="product-slider__item" style="background-image: url(img/card-page/632d61_6cea25f5a0b14e74844e3bfe9b2ea25c_mv2_d_3916_2634_s_4_2.jpg)">
+            </div>
+            <div class="product-slider__item" style="background-image: url(img/card-page/giraffe-4312090_1920.jpg)">
+            </div>
+            <div class="product-slider__item" style="background-image: url(img/card-page/mark-basarab-z8ct_Q3oCqM-unsplash.jpg)">
+            </div>
+            <div class="product-slider__item" style="background-image: url(img/card-page/milada-vigerova-cX0Zgk8_v18-unsplash.jpg)">
+            </div>
+            <div class="product-slider__item" style="background-image: url(img/card-page/visovac-4028988_1920.jpg)">
+            </div>
+          </div>
+          <div class="product-desc">
+            <h4 class="product-title">Название товара</h4>
+            <p class="product-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sint ea? Fugiat, commodi similique enim quos, alias officia dolores veritatis repellat dolore autem quod amet, consectetur corporis at molestiae.</p>
+            <a href="#!" class="product-desc__calculate">Примеры расчета стоимости</a>
+            <a href="#!" class="product-desc__calculate">Примеры схем расстановки</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="product-desc">
+          <p class="product-desc__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod sunt illum nesciunt odit! Numquam assumenda facere, temporibus quisquam itaque modi consequuntur blanditiis dignissimos aperiam ducimus cumque ex odit. Excepturi perferendis alias libero blanditiis eius! Eum unde atque ad, a aspernatur at delectus id odit nemo eaque placeat itaque explicabo deserunt corporis eos nesciunt maiores, expedita necessitatibus molestiae totam autem. Animi porro blanditiis earum cupiditate doloremque aperiam quae architecto amet recusandae, cumque, quidem omnis fuga modi ab iste vitae magni minus, sed iusto obcaecati harum. Odit quaerat incidunt tempore, obcaecati! Voluptatem ducimus dolorum ea unde, maxime illo iusto minima id!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-table">
+    <div class="container">
+        <!-- <form> -->
+          <div class="row purchase-wrap">
+            <div class="purchase">
+              <table class="table-calculate">
+                <tr>
+                  <th>
+                    Выберите способ покупки
+                  </th>
+                </tr>
+                <tr>
+                  <td width="200">
+                    <input type="radio" id="method1" checked class="purchase__input" name="purchase-method" value="Покупка">
+                    <label class="purchase__item" for="method1">Покупка</label>
+                    <span class="purchase__item" tooltip="Выпадающее окно с описанием при наведении" flow="right">?</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" id="method2" class="purchase__input" name="purchase-method" value="Аренда">
+                    <label class="purchase__item" for="method2">Аренда</label>
+                    <span class="purchase__item" tooltip="Выпадающее окно с описанием при наведении" flow="right">?</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" id="method3" class="purchase__input" name="purchase-method" value="Лизинг">
+                    <label class="purchase__item" for="method3">Лизинг</label>
+                    <span class="purchase__item" tooltip="Выпадающее окно с описанием при наведении" flow="right">?</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="calculate-block">
+              <table class="table-calculate">
+                <tr>
+                  <td colspan="4"> Калькулятор расчета <span tooltip="Выпадающее окно с описанием при наведении" flow="right">?</span> </td>
+                </tr>               
+                <tr>
+                  <th>Высота стен</th>
+                  <th>Длина стен</th>
+                  <th>Кол-во углов</th>
+                  <th ></th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="stepper stepper--style-2 js-spinner">
+                      <input  type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+                      <div class="stepper__controls">
+                          <button type="button" spinner-button="up">+</button>
+                          <button type="button" spinner-button="down">-</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="stepper stepper--style-2 js-spinner">
+                      <input  type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+                      <div class="stepper__controls">
+                          <button type="button" spinner-button="up">+</button>
+                          <button type="button" spinner-button="down">-</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="stepper stepper--style-2 js-spinner">
+                      <input  type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+                      <div class="stepper__controls">
+                          <button type="button" spinner-button="up">+</button>
+                          <button type="button" spinner-button="down">-</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="td-button"><a href="#calculate-popup" id="calculateButton" class="calculate-block__button">Рассчитать</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="product-list">
+
+              <div class="product-list__table">
+                <div class="product-list__row">                                            
+                  <div class="product-list__cell">Наименование</div>
+                  <div class="product-list__cell">Толщина</div>
+                  <div class="product-list__cell">Кол-во</div>
+                  <div class="product-list__cell" style="text-align: left">Цена от:</div>
+                  <div class="product-list__cell"></div>
+                </div>
+                <div class="product-list__row">
+                  <div class="product-list__cell">Товар</div>
+                  <div class="product-list__cell">0.20</div>
+                  <div class="product-list__cell">3</div>
+                  <div class="product-list__cell">5000 р.</div>
+                  <div class="td-button product-list__cell">
+                    <button class="product-list__button">В корзину</button>
+                  </div>
+                </div>
+                <div class="product-list__row">
+                  <div class="product-list__cell">Товар</div>
+                  <div class="product-list__cell">0.25</div>
+                  <div class="product-list__cell">4</div>
+                  <div class="product-list__cell">5000 р.</div>
+                  <div class="td-button product-list__cell">
+                    <button class="product-list__button">В корзину</button>
+                  </div>
+                </div>
+                <div class="product-list__row">
+                  <div class="product-list__cell">Товар</div>
+                  <div class="product-list__cell">0.35</div>
+                  <div class="product-list__cell">3</div>
+                  <div class="product-list__cell">5000 р.</div>
+                  <div class="td-button product-list__cell"><button class="product-list__button">В корзину</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-total">
+              <div class="product-total-row product-total-row_nowrap">
+                <p class="product-total__text">Сумма товара</p>
+                <p class="product-total__summ">Итого: 60000 р</p>
+              </div>
+              <div class="product-total-row justify-content-between">
+                <a href="#!" class="button product-total__btn product-total__btn_color">Продолжить покупки</a>
+                <a href="#!" class="button product-total__btn order-button">оформит заказ</a href="#!">
+              </div>
+            </div>
+          </div>
+        <!-- </form> -->
+
+    </div>
+  </section>
+  <section class="similar">
+    <div class="container">
+      <h2 class="page-title similar-page-title">С этим товаром покупают:</h2>
+      <div class="similar-product similar-slider">
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+        <div class="similar-product__item">
+          <img src="img/card-page/visovac-4028988_1920.jpg" alt="Товар" class="similar-product__img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="description">
+    <div class="container">
+      <div class="row">
+        <h4 class="page-subtitle">Заголовок, если понадобится</h4>
+      </div>
+      <div class="row">
+        <p class="description__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias nemo iusto quisquam ab nesciunt, natus, rem, illum veritatis incidunt nostrum magnam! Molestiae nobis quaerat, libero facere quibusdam. Alias ratione amet aut similique, ducimus aperiam iure beatae soluta quos illo aliquam, fuga maxime. Odio blanditiis, quo repellat animi perspiciatis fuga exercitationem et obcaecati sequi? Facere maxime illo itaque voluptatem ea expedita, eius, magni ratione reiciendis enim, vitae laudantium numquam ut architecto perspiciatis? Quidem eligendi blanditiis fugit voluptates explicabo repellat minus recusandae nostrum aspernatur assumenda asperiores deserunt ad similique soluta optio, nisi amet itaque officiis deleniti dolorem. Fugit dolore, veniam aut.  
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="row">
+          <a href="#!" class="footer-logo logo">
+            <img src="img/logo_white.png"  class="img-responsive" alt="логотип">
+          </a>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#!">Личный кабинет</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#!">Мои заказы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#!">Реферальная программа</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#!">Обратная связь</a></li>
+          </ul>
+          <div class="footer-contacts">
+            <a class="footer-phone phone" href="tel:+8 (800) 555-55-55">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+8 (800) 555-55-55</span>
+            </a>
+            <a href="#popupOrderForm" class="button footer-button" id="orderButton"><span>Оформить заявку</span></a>
+            <div class="footer-address address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <div class="address-inner">
+                <span class="address__item">140234, Москва, ул. Московская, д. 42, офис 39</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>Copyright @ 2019 Название компании. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+    <div class="cooperation-content-form popup-order zoom-anim-dialog mfp-hide" id="popupOrderForm">
+      <div class="row-form form-desc">
+        <h4>Бесплатно</h4>
+        <p> <i class="fa fa-check-circle-o"></i> схема расстановки опалубки</p>
+        <p> <i class="fa fa-check-circle-o"></i> расчет стоимости и объема опалубки с учётом всех комплектующих.</p>
+      </div>
+      <form>
+        <h4>Оформление заказа</h4>
+        <div class="form-content">
+          <div class="row-form">
+            <label for="orderEmail"><i class="fa fa-envelope"></i></fa><span>E-mail</span></label>
+            <input id="orderEmail" placeholder="Введите e-mail" type="text">
+          </div>
+          <div class="row-form">
+            <label for="orderName"><i class="fa fa-user-circle-o"></i><span>ФИО</span></label>
+            <input id="orderName" placeholder="Введите ФИО" type="text">
+          </div>
+          <div class="row-form">
+            <label for="orderPhone"><i class="fa fa-phone"></i> <span>Телефон</span></label>
+            <input id="orderPhone"  placeholder="Введите телефон" type="text">
+          </div>
+          <div class="row-form">
+            <label for="orderMessage"><i class="fa fa-comment-o"></i> <span>Ваш коментарий <br>(по желанию)</span></label>
+            <input id="orderMessage"  placeholder="Сообщение" type="text">
+          </div>
+          <div class="row-form">
+              <p class="form-content__text">здесь вы можете загрузить схему своего проекта</p>
+              <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} файла выбрано" multiple />
+               <label for="file"><strong>Добавить файл</strong> <!-- <span></span> --></label>
+              <input type="text" id="linkFile" class="form-content__link-file" placeholder="Ссылка на файл">
+          </div>
+        </div>
+        <div class="row-form">
+          <button class="form__btn" type="submit">Оставить заявку</button>
+        </div>
+      </form>
+    </div>
+
+<div id="calculate-popup" class="calculate-result zoom-anim-dialog mfp-hide">
+  <h4 class="calculate-result__title">Цена покупки товара <a href="#!" class="change">Изменить</a></h4>
+  <table class="table-result table-calculate">
+    <tr>                                            
+      <th>Название</th>
+      <th>Кол-во</th>
+      <th>Цена</th>
+    </tr>
+    <tr>
+      <td>Товар</td>
+      <td>3</td>
+      <td>5000 р.</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <div class="row">
+    <h4>Итого: <span class="sum">24000 р.</span> </h4>
+  </div>
+  <div class="row button-wrap">
+     <button class="calculate-result__button">Оформить заказ</button>
+  </div>
+ 
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/stepper.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=a1640bfd-c500-4cf0-9618-02cd28a9131c&lang=ru_RU"
+  type="text/javascript">
+  </script>
+  <script src="js/scripts.min.js"></script>
+
+</body>
+</html>

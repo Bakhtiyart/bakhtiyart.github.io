@@ -1,0 +1,141 @@
+@import vars
+body.open-mobile-menu
+  position: relative
+  .mobile-menu-wrap
+    left: 0
+  .overlay
+    display: block
+    position: fixed
+.mobile-menu-wrap
+  padding: 25px
+  list-style: none
+  position: fixed
+  width: 90%
+  left: -100%
+  top: 0
+  bottom: 0
+  background-color: $accent
+  z-index: 9
+  transition: all .3s ease-out
+  display: none
+  overflow-x: scroll
+  box-sizing: border-box
+  +media-breakpoint-down(md)
+    width: 80%
+  &.mobile-menu-wrap_show
+    display: block
+.mobile-menu
+  max-width: 320px
+  width: 100%
+  margin: 0 auto
+  padding: 0
+  list-style: none
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  margin-top: 50px
+  &__item
+    color: #ffffff
+    overflow: hidden
+    margin-bottom: 15px
+    .sub-menu
+      list-style: none
+      padding: 0
+      height: 0
+      transition: all .3s ease-out
+      &__link
+        line-height: 1.1
+        display: inline-block
+        font-size: 14px
+        color: #e2dfde
+        margin:
+          bottom: 10px
+        &:first-child
+          margin-top: 5px
+        &:hover
+
+      &.sub-menu_active
+        height: auto
+        transition: all .3s ease-out
+  &__link
+    color: #ffffff
+    &:hover
+      text-decoration: none
+      color: #ffffff
+      &:after
+        display: none
+  &.mobile-menu_show
+    display: block
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, .5)
+  z-index: 8
+  display: none
+  &.overlay_active
+
+.header-contacts
+  width: 320px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-content: center
+  +media-breakpoint-down(xs)
+    width: auto
+  .logo
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 10px
+    span
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 18px
+  .address
+    align-items: center
+    justify-content: center
+    +media-breakpoint-down(sm)
+      margin-bottom: 10px
+    &__item 
+      color: #ffffff
+      font-size: 18px
+      +media-breakpoint-down(sm)
+        font-size: 16px
+    .fa
+      font-size: 23px
+      margin-top: 10px
+      +media-breakpoint-down(sm)
+        margin-right: 8px
+  .phone
+    display: flex
+    justify-content: center
+    +media-breakpoint-down(md)
+      margin-bottom: 10px
+    .fa
+      font-size: 23px
+    a
+      color: #ffffff
+      font-size: 18px
+      +media-breakpoint-down(sm)
+        font-size: 16px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+  .sign-in
+    display: flex
+    justify-content: center
+    &__item
+     text-align: center
+     color: #ffffff
+     font-size: 18px
+     margin-right: 40px
+     +media-breakpoint-down(sm)
+      font-size: 16px
+     &:last-child
+      margin-right: 0

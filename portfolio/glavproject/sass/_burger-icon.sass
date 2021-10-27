@@ -1,0 +1,16 @@
+#mobileMenuIcon
+  display: none
+  position: absolute
+  left: 20px
+  top: 5px
+  +media-breakpoint-down(md)
+    transition: all .3s ease-out
+    display: block
+    z-index: 10
+body.open-mobile-menu
+  #mobileMenuIcon
+    transition: all .3s ease-out
+    left: 93%
+    +media-breakpoint-down(md)
+      left: 80%
+

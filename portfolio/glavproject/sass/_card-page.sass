@@ -1,0 +1,608 @@
+// card page styles
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+@import vars
+
+.col-50
+  width: 49%
+  +media-breakpoint-down(lg)
+    width: 47%
+  +media-breakpoint-down(sm)
+    width: 95%
+    margin: 0 auto
+    margin-bottom: 20px
+.page
+  &-title
+    margin-top: 55px
+// .breadcrumb
+//  list-style: none
+//  padding: 0
+//  margin: 0
+//  transition: all .3s ease-out
+//  &__item
+//    display: inline-block
+//  &__link
+//    color: $text
+//  .fa-arrow-circle-left
+//    color: $accent  
+
+.product
+  .row
+    justify-content: space-between
+  &-title
+    font-size: 45px
+    font-weight: 700
+    margin-top: 25px
+    margin-bottom: 10px
+    +media-breakpoint-down(sm)
+      font-size: 24px
+      text-align: center
+  &-desc__text
+    color: $title-color
+  &-desc__calculate
+    font-size: 29px
+    text-transform: uppercase
+    color: $text
+    transition: all .3s ease-out
+    &:hover
+      transition: all .3s ease-out
+      text-decoration: none
+      color:  lighten($accent, 30)
+    +media-breakpoint-down(sm)
+      font-size: 18px
+.single-slider
+  &__item
+    // max-width: 635px
+    // width: 100%
+    height: 480px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+  &__img
+    max-width: 100%
+    width: 100%
+    height: auto
+    display: block
+.product-slider
+  &__item
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    height: 122px
+    margin: 0 15px
+  .slick-next:before, .slick-prev:before
+    color: $text
+  .slick-prev
+    left: -15px!important
+    +media-breakpoint-down(lg)
+      left: -10px
+  .slick-next
+    right: -15px
+    +media-breakpoint-down(lg)
+      right: -10px
+
+.product-table 
+  margin-top: 75px
+  margin-bottom: 65px
+  +media-breakpoint-down(sm)
+    margin-top: 20px
+    margin-bottom: 30px
+.purchase-wrap
+  justify-content: space-between
+  align-items: flex-end
+  margin-bottom: 80px
+  +media-breakpoint-down(xs)
+    margin-bottom: 5px
+.purchase
+  max-width: 390px
+  width: 100%
+  .table-calculate
+    td
+      position: relative
+      text-align: center
+      padding: 5px
+  +media-breakpoint-down(md)
+    margin: 10px auto
+  &__input
+    display: none!important
+  input[type="radio"]:checked + label:before
+    opacity: 1
+  label
+    // position: relative
+    margin-left: 30px
+    &:after
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 10px
+      content: ''
+      background: #ffffff
+      border: 2px solid $accent
+      border-radius: 50%
+      width: 27px
+      height: 27px
+      +media-breakpoint-down(xs)
+        width: 15px
+        height: 15px
+    &:before
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 18px
+      content: ''
+      background: $accent
+      border-radius: 50%
+      width: 11px
+      height: 11px
+      z-index: 11
+      opacity: 0
+      +media-breakpoint-down(xs)
+        width: 7px
+        height: 7px
+        left: 14px
+
+
+.table-calculate
+  width: 100%
+  th
+    background-color: $accent
+    color: #fff
+    padding: 0 20px
+    font-weight: 700
+    text-align: center
+    border: 2px solid $accent
+    text-align: center
+  td
+    border: 2px solid $accent
+    padding: 0 20px
+    border-right-color: #d9d9d9
+    font-weight: 700
+    &[colspan="4"]
+      text-align: center
+    &:last-child
+      border-right-color: $accent
+    &.td-button
+      padding: 5px 10px
+      border-left: 0
+    input[type="radio"]
+      margin-right: 5px
+      display: inline-block
+    label
+      margin-bottom: 0
+    span
+      float: right
+      display: inline-block
+      cursor: pointer
+      width: 30px
+      text-align: center
+      color: #a9acb1
+    button
+      background-color: $accent
+      border: none
+      width: 100%
+      color: #ffffff
+      display: inline-block
+      // margin: -10px 0
+      flex-shrink: 0
+  
+.calculate-block
+  max-width: 825px
+  width: 100%
+
+  .table-calculate
+    min-width: 500px
+    +media-breakpoint-down(sm)
+      min-width: auto
+
+    th
+      +media-breakpoint-down(md)
+        padding: 5px 5px
+      +media-breakpoint-down(sm)
+        font-size: 13px
+  +media-breakpoint-down(lg)
+    max-width: 625px
+  +media-breakpoint-down(md)
+    margin: 0 auto
+    position: relative
+
+  &__button
+    display: inline-block
+    color: #ffffff
+    text-align: center
+    font-weight: 500
+    width: 143px
+    +media-breakpoint-down(sm)
+      width: auto
+    &:hover
+      font-weight: 700
+    &:hover
+      text-decoration: none
+      color: #ffffff
+  .td-button
+    padding: 0
+    background-color: $accent
+    border-left: 2px solid  #d9d9d9!important
+    text-align: center
+    width: 100px
+    font-weight: 300
+    +media-breakpoint-down(sm)
+      width: auto
+    &:hover
+      font-weight: 700
+  td
+    +media-breakpoint-down(md)
+      padding: 0 5px!important
+    span
+      float: none!important
+
+.product-list
+  width: 100%
+  margin-top: 10px
+  +media-breakpoint-down(xs)
+    font-size: 13px
+  &__table
+    display: flex
+    flex-direction: column
+  &__row
+    display: flex
+    border: 2px solid $accent
+    border-top: none
+    justify-content: space-around
+    &:first-child
+      background: $accent
+      color: #ffffff
+      border: 2px solid $accent
+      .product-list__cell
+        overflow: hidden
+        text-overflow: ellipsis
+        border: none
+        &:first-child
+          +media-breakpoint-down(xs)
+            overflow: hidden
+            text-overflow: ellipsis
+            // word-wrap: break-word
+
+  &__cell
+    padding: 4px 3px
+    border-right: 2px solid #d9d9d9
+    text-align: center
+    width: 100%
+    word-wrap: break-word
+    &:last-child
+      border-right: none
+      +media-breakpoint-down(xs)
+        padding: 0
+    &:first-child
+      +media-breakpoint-down(xs)
+        max-width: 100px
+        width: 100%
+        min-width: 70px
+        text-overflow: ellipsis
+    &:nth-child(2)
+      +media-breakpoint-down(xs)
+        max-width: 100px
+        width: 100%
+        min-width: 60px
+        text-align: center
+    &:nth-child(3)
+      +media-breakpoint-down(xs)
+        max-width: 100px
+        width: 100%
+        min-width: 50px
+        text-align: center
+    &:nth-child(4)
+      +media-breakpoint-down(xs)
+        max-width: 100px
+        width: 100%
+        min-width: 50px
+        text-align: center
+  .td-button
+    padding: 5px
+  &__button
+    overflow: hidden
+    text-overflow: ellipsis
+    border: none
+    background: $accent
+    color: #ffffff
+    padding: 5px 33%
+    +media-breakpoint-down(lg)
+      padding: 5px 30%
+    +media-breakpoint-down(md)
+      padding: 5px 15%
+    +media-breakpoint-down(xs)
+      padding: 10%
+
+
+  //   .table-calculate
+  //     width: 100vw
+  // &__button
+  //   font-weight: 500
+  //   &:hover
+  //     font-weight: 700
+  // table
+  //   th
+  //     +media-breakpoint-down(sm)
+  //       padding: 8px
+  //       font-size: 12px
+  //   td
+  //     text-align: center
+  //     +media-breakpoint-down(sm)
+  //       padding: 2px
+  //     +media-breakpoint-down(xs)
+  //       line-height: 16px
+  //   td.td-button
+  //     width: 250px
+  //     padding: 5px!important
+  //     +media-breakpoint-down(md)
+  //       width: auto
+  //     +media-breakpoint-down(sm)
+  //       padding: 0!important
+  
+.similar
+  background-color: #f8f8f8
+  padding: 100px 0 20px 0
+  +media-breakpoint-down(sm)
+    padding: 20px 0 20px 0
+  &-page-title
+    margin-bottom: 70px
+    +media-breakpoint-down(xs)
+      margin-bottom: 30px
+      font-size: 24px
+      text-align: center
+      line-height: 26px
+      margin-top: 0
+.similar-product
+  .slick-next:before, .slick-prev:before
+    color: $text
+  .slick-prev
+    left: -20px
+    +media-breakpoint-down(lg)
+      left: -10px
+  .slick-next
+    right: -20px
+    +media-breakpoint-down(lg)
+      right: -10px
+  &__item
+    height: 175px
+    overflow: hidden
+    margin: 0 25px
+    +media-breakpoint-down(sm)
+      height: auto
+    img
+      max-width: 100%
+      width: 100%
+      height: auto
+
+.description
+  padding: 100px 0 91px 0
+  .sub-title
+    margin-bottom: 30px
+  p
+    color: $title-color
+
+
+
+// modal calculate
+.calculate-result
+  background: white
+  padding: 20px 30px
+  text-align: left
+  max-width: 836px
+  margin: 40px auto
+  position: relative
+  background: rgba($accent, .8)
+  border-radius: 22px
+  color: #ffffff
+  border: 1px solid #ffffff
+  padding: 40px
+  +media-breakpoint-down(md)
+    padding: 5px
+    padding-top: 50px
+  &__title
+    font-size: 33px
+    font-weight: 900
+    text-align: center
+  .change
+    text-decoration-line: underline
+    text-decoration-style: dashed
+    font-size: 20px
+    color: #697caa
+    display: inline-block
+    padding-bottom: 5px
+  .mfp-close 
+    border-radius: 50%
+    border: 2px solid #ffffff
+    margin: 30px
+    color: #ffffff
+    font-size: 44px
+    width: 32px
+    height: 32px
+    line-height: 31px
+  .table-result
+    margin-bottom: 20px
+    border: 2px solid #ffffff
+    th
+      border: 1px solid #ffffff
+    td
+      border: 1px solid #ffffff
+      height: 50px
+      &:last-child
+        border: 1px solid #ffffff
+  
+  .row
+    justify-content: flex-end
+    h4
+      text-transform: uppercase
+  .button-wrap
+    justify-content: center
+  &__button
+    background: transparent
+    border-radius: 22px
+    border: 2px solid #ffffff 
+    color: #ffffff
+    padding: 5px 30px
+    margin-top: 50px
+    margin-bottom: 50px
+    display: inline-block
+
+
+.product-total
+  width: 100%
+  margin-top: 50px
+  font-weight: 700
+  +media-breakpoint-down(xs)
+    margin-top: 20px
+  &__text
+    width: 25%
+    text-align: center
+    +media-breakpoint-down(xs)
+      width: 100%
+      margin-bottom: 0
+  &__summ
+    text-transform: uppercase
+    width: 33%
+    text-align: left
+    padding-left: 20px
+    +media-breakpoint-down(lg)
+      width: 40%
+    +media-breakpoint-down(xs)
+      width: 100%
+      text-align: center
+      padding-left: 0
+      margin-bottom: 0
+
+  &-row
+    display: flex
+    justify-content: space-between
+    +media-breakpoint-down(md)
+      flex-wrap: wrap
+    &_nowrap
+      flex-wrap: nowrap
+      +media-breakpoint-down(md)
+        flex-wrap: nowrap
+  &__btn
+    margin-top: 0
+    +media-breakpoint-down(sm)
+      margin-top: 30px
+    +media-breakpoint-down(xs)
+      margin-top: 10px
+    &_color
+        background: $accent
+        &:hover
+          box-shadow: 0 0 11px 10px rgba($accent, 0.44)
+  .order-button
+    font-size: 28px
+    max-width: 450px
+    width: 100%
+
+
+
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+    transition: all 0.2s ease-in-out
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.my-mfp-slide-bottom
+  .zoom-anim-dialog
+    opacity: 0
+    transition: all 0.2s ease-out
+    transform: translateY(-20px) perspective(600px) rotateX(10deg)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    transform: translateY(0) perspective(600px) rotateX(0)
+  &.mfp-removing .zoom-anim-dialog
+    opacity: 0
+    transform: translateY(-10px) perspective(600px) rotateX(10deg)
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+// stepper js
+
+.stepper
+  display: inline-block
+  width: 100%
+  position: relative
+
+.stepper__input
+  width: 100%
+  height: 50px
+  padding: 0 .75rem
+  border: none
+  -moz-appearance: textfield
+  outline: none
+  &:focus
+    color: #333
+    background-color: #fff
+    // border-color: #c4c4c4
+    outline: 0
+    // box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    margin: 0
+
+.stepper__controls
+  [spinner-button="up"], [spinner-button="down"]
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    padding: 0
+    outline: none
+    background-color: #8c9fc5
+    height: 30px!important
+    width: 30px
+    font-size: 1.375em
+    line-height: 0
+    transition: all ease 0.25s
+    color: #ffffff
+    border-radius: 50%
+    text-align: center
+    padding-bottom: 3px
+    +media-breakpoint-down(sm)
+      width: 15px
+      height: 15px!important
+  [spinner-button="up"]:hover, [spinner-button="down"]:hover
+    background-color: #333
+    color: #ffffff
+
+
+.stepper--style-2
+  .stepper__input
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+    +media-breakpoint-down(md)
+      padding: 0
+  [spinner-button="up"], [spinner-button="down"]
+    position: absolute
+    height: 100%
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 1
+  [spinner-button="up"]
+    right: 0
+    margin-left: -1px
+  [spinner-button="down"]
+    left: 0
+    margin-right: -1px

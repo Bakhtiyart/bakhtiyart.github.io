@@ -1,0 +1,134 @@
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+@import vars
+.justify-content-around
+  justify-content: space-around!important
+.justify-content-between
+  justify-content: space-between!important
+.align-items-center
+  align-items: center!important
+.thankyou-content
+  background-image: url(../img/shakinghands.png)
+  background-position: center
+  background-size: cover
+  position: relative
+  padding-top: 40px
+  padding-bottom: 40px
+  color: #ffffff
+  &__img-wrap
+    // width: 120px
+    // height: auto
+    margin-right: 20px
+    +media-breakpoint-down(md)
+      margin-right: 0
+    img
+      max-width: 100%
+      width: 100%
+      height: auto
+      -ms-interpolation-mode: bicubic
+      width: 120px
+      height: 170px
+  .container
+    position: relative
+    z-index: 2
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#5e667f, 0.7)
+    z-index: 1
+  .breadcrumb li a
+    color: #ffffff
+  .page-title
+    color: #ffffff
+    font-size: 45px
+    text-align: center
+    margin-bottom: 30px
+  .thankyou-row
+    display: flex
+    justify-content: center
+    margin-bottom: 55px
+    flex-wrap: wrap
+  .order
+    display: flex
+    +media-breakpoint-down(md)
+      margin-bottom: 30px
+    .icon
+      margin-right: 15px
+    .number-order
+      span
+        &:first-child
+          font-weight: 300
+    .total-sum
+      span
+        &:first-child
+          font-weight: 300      
+  .thankyou__link
+    display: inline-block
+    border: 1px solid #ffffff
+    border-radius: 30px
+    padding: 7px 30px
+    color: #ffffff
+    +media-breakpoint-down(xs)
+      padding: 7px 25px
+    &:hover
+      text-decoration: none
+  .thankyou-phone 
+    color: #ffffff
+    display: flex
+    align-items: center
+
+    .fa
+      font-size: 36px
+    &:hover
+      text-decoration: none
+  .thankyou-email
+    color: #ffffff
+    display: flex
+    align-items: center
+    .fa
+      font-size: 36px
+      color: $accent-2
+      margin-right: 5px
+
+
+.other-product-wrap
+  background-color: #f8f8f8
+  padding: 20px 0 45px 0
+  margin-top: 70px
+  margin-bottom: 70px
+  +media-breakpoint-down(sm)
+    padding: 20px 0 20px 0
+.page-title
+  margin-bottom: 70px
+  +media-breakpoint-down(xs)
+    margin-bottom: 30px
+    font-size: 24px
+    text-align: center
+    line-height: 1.4
+    margin-top: 0
+  
+.other-product
+  .slick-next:before, .slick-prev:before
+    color: $text
+  .slick-prev
+    left: -20px
+    +media-breakpoint-down(lg)
+      left: -10px
+  .slick-next
+    right: -20px
+    +media-breakpoint-down(lg)
+      right: -10px
+  &__item
+    height: 175px
+    overflow: hidden
+    margin: 0 25px
+    +media-breakpoint-down(sm)
+      height: auto
+    img
+      max-width: 100%
+      width: 100%
+      height: auto

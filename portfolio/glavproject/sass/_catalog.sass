@@ -1,0 +1,283 @@
+
+.catalog-content-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  position: relative
+
+.catalog-content
+  width: calc(100% - 360px)
+  +media-breakpoint-down(md)
+    width: 100%
+  .page-title
+    margin-top: 0
+    line-height: 45px
+    margin-bottom: 60px
+    position: relative
+    display: inline-block
+    padding-right: 60px
+    +media-breakpoint-down(sm)
+      margin-bottom: 0
+    &:after
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+      display: block
+      box-shadow: 0 0 4px rgba(226, 212, 193, 0.47)
+      border-radius: 3px
+      background-color: #d24a43
+      width: 54px
+      height: 6px
+      +media-breakpoint-down(md)
+        display: none
+  &-inner
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  &__item
+    margin:
+      top: 40px
+      left: 15px
+      bottom: 20px
+      right: 15px
+  .catalog-content-box
+    // box-shadow: 0px 0px 21px 6px #D4D4D4
+    transition: all .3s ease-out
+    &__img-wrap
+      overflow: hidden
+      width: 264px
+      height: 180px
+      box-shadow: 0px 0px 21px 6px #D4D4D4
+      +media-breakpoint-down(lg)
+        width: 200px
+    &__desc
+      height: 55px
+      text-align: center
+      font-weight: 700
+      color: $text
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-top: 20px
+      p
+        // font-weight: 700
+    &:hover
+      transition: all .3s ease-out
+      cursor: pointer
+      // transform: scale(1.1)
+
+.catalog-sidebar
+  width: 356px
+  +media-breakpoint-down(lg)
+    width: 300px
+  +media-breakpoint-down(md)
+    width: auto
+    height: auto
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 8
+    display: flex
+    flex-direction: column
+    // justify-content: flex-end
+    align-items: flex-end
+  #sidebarIcon
+    display: none
+    +media-breakpoint-down(md)
+      display: block
+      cursor: pointer
+    .hamburger-inner
+      background-color: $text
+      &:after, &:before
+        background-color: $text
+
+.sidebar-menu
+  padding: 0
+  margin: 0
+  list-style: none
+  &.show
+    display: block
+  +media-breakpoint-down(md)
+    display: none
+    background: #ffffff
+
+  &__item
+  &__link
+    display: inline-block
+    padding: 16px 21px
+    color: $text
+    transition: all .3s ease-out
+    border-bottom: 2px solid #e8e8e8
+    +media-breakpoint-down(lg)
+      padding: 16px 30px
+    .fa
+      margin-right: 10px
+      opacity: 0
+    &_active
+      color: #ffffff
+      background-color: $accent
+      transition: all .3s ease-out
+      .fa
+        opacity: 1
+    &:hover
+      text-decoration: none
+      color: #ffffff
+      background-color: $accent
+      transition: all .3s ease-out
+      .fa
+        opacity: 1
+
+.catalog-content-form
+  padding: 20px
+  max-width: 100%
+  width: 100%
+  height: auto
+  box-shadow: 0 0 13px rgba(43, 83, 162, 0.44)
+  border: 2px solid #1a376f
+  background: transparent
+  padding: 20px 40px
+  +media-breakpoint-down(lg)
+    max-width: 580px
+  +media-breakpoint-down(md)
+    margin: 0 auto
+    box-sizing: border-box
+  +media-breakpoint-down(sm)
+    padding: 10px
+  .fa
+    color: $link-color
+    font-size: 24px
+    margin-right: 8px
+  h4
+    font-size: 38px
+    text-align: center
+    font-weight: 700
+    margin-bottom: 29px
+  form
+    background: transparent
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+  .form-content
+    max-width: 100%
+    width: 100%
+    margin: 0 auto
+    margin-bottom: 20px
+    +media-breakpoint-down(xs)
+      width: 90%
+    &__text
+      margin-top: 20px
+    &__link-file
+      width: 200px!important
+      margin-left: 10px
+      +media-breakpoint-down(xs)
+        margin: 0 auto
+        margin-top: 20px
+        text-align: center
+        display: block
+  .row-form
+    margin-bottom: 10px
+    +media-breakpoint-down(xs)
+      display: flex
+    &-add
+      flex-direction: column
+      align-items: center
+  input[type=text]
+    border: none
+    border-bottom: 2px solid #e8e8e8
+    width: 49%
+    +media-breakpoint-down(xs)
+      max-width: 100%
+      width: 100%
+  label
+    width: 49%
+    +media-breakpoint-down(xs)
+      width: auto
+      span
+        display: none
+  input[type=file]
+    +media-breakpoint-down(xs)
+      width: 85%
+  textarea
+    border: 2px solid #e8e8e8
+    resize: none
+    width: 49%
+    background: transparent
+    height: 100px
+    +media-breakpoint-down(xs)
+      width: 100%
+    ::placeholder
+      color: transparent
+
+
+  .inputfile
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+  .inputfile + label
+      color: black
+      background-color: transparent
+      display: inline-block
+      text-align: center
+      width: auto
+      cursor: pointer
+      +media-breakpoint-down(xs)
+        width: 100%
+        margin: 0 auto
+  
+  .inputfile:focus + label strong,
+  .inputfile + label:hover strong
+      background-color: #fafafa
+  .inputfile:focus + label
+    outline: 1px dotted #000
+    outline: -webkit-focus-ring-color auto 5px
+  .inputfile + label * 
+    pointer-events: none
+  .inputfile + label span
+    width: 200px
+    min-height: 2em
+    display: inline-block
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    vertical-align: middle
+    border-bottom: 2px solid #b4bfe2
+    margin-left: 10px
+    +media-breakpoint-down(xs)
+      width: 100%
+      margin-left: 0
+      margin-top: 10px
+  .inputfile + label strong
+    height: 100%
+    color: black
+    font-weight: 400
+    background-color: #ffffff
+    display: inline-block
+    padding: 7px 25px
+    border: 1px solid #ccc
+    border-radius: 10px
+
+
+
+
+  button
+    display: block
+    width: 203px
+    height: 56px
+    box-shadow: 0 0 28px 2px rgba(45, 70, 119, 0.23)
+    border-radius: 28px
+    border: 1px solid #ffffff
+    background-color: #1a376f
+    color: #ffffff
+    margin: 0 auto
+
+
+.inputfile:focus + label,
+.inputfile.has-focus + label
+  outline: 1px dotted #000
+  outline: -webkit-focus-ring-color auto 5px

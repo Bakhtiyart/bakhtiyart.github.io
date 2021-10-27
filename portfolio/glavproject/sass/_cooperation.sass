@@ -1,0 +1,372 @@
+.cooperation-page
+  .title
+    margin-bottom: 30px
+    +media-breakpoint-down(xs)
+      margin-bottom: 10px
+      font-size: 28px
+    span
+      font-size: 33px
+
+.cooperation
+  +media-breakpoint-down(xs)
+    padding:
+      top: 20px
+  &-inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    margin:
+      top: 20px
+      right: 40px
+      bottom: 50px
+      left: 40px
+    &:last-child
+      margin:
+        right: 0
+    +media-breakpoint-down(sm)
+      margin:
+        top: 20px
+        right: auto
+        bottom: 10px
+        left: auto
+    &:nth-child(3n + 4), &:first-child
+      margin:
+        left: 0
+      +media-breakpoint-down(sm)
+        margin:
+          left: auto
+
+
+.cooperation-box
+  width: 375px
+  height: auto
+  box-shadow: 8px 14px 25px 4px rgba(89, 96, 116, 0.32)
+  border-radius: 20px
+  overflow: hidden
+  transition: all .3s ease-out
+  +media-breakpoint-down(lg)
+    width: 320px
+  +media-breakpoint-down(sm)
+    width: 300px
+  &:hover
+    transition: all .3s ease-out
+    cursor: pointer
+    transform: scale(1.1)
+    .cooperation-box__desc
+      box-shadow: 8px 14px 25px 4px rgba(89, 96, 116, 0.32)
+      background-image: linear-gradient(-38deg, #e8ddd3 0%, #afafbc 18%, #14418d 100%)
+    p, h4
+      color: #ffffff
+
+    a
+      color: #ffffff
+      &:after
+        background-color: #ffffff
+
+
+  &__img-wrap
+    width: 100%
+    height: 220px
+    overflow: hidden
+    +media-breakpoint-up(xl)
+      height: 254px
+    img
+      width: 100%
+  &__desc
+    background-color: #d0d0d0
+    background-image: linear-gradient(45deg, #f3eee9 0%, #e6e3e5 18%, #9dadd5 100%)
+    height: 100%
+    padding: 20px
+    h4
+      font-weight: 700
+      font-size: 29px
+      position: relative
+      margin-bottom: 0
+      line-height: 1.3
+      text-align: center
+      margin-bottom: 20px
+      +media-breakpoint-down(lg)
+        font-size: 22px
+      +media-breakpoint-down(sm)
+        font-size: 21px
+      &:before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        left: 0
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        top: 50%
+        transform: translateX(-50%)
+        background-color: #677190
+      &:after
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        right: 0
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        top: 50%
+        transform: translateX(-50%)
+        background-color: #677190
+    p
+      font-weight: 300
+      text-overflow: ellipsis
+      +media-breakpoint-down(lg)
+        font-size: 18px
+
+    a
+      font-size: 21px
+      font-weight: 100
+      color: $text
+      margin-left: 18px
+      position: relative
+      +media-breakpoint-up(xl)
+        font-size: 25px
+      +media-breakpoint-down(sm)
+        font-size: 21px
+      &:after
+        position: absolute
+        content: ''
+        bottom: -3px
+        left: 0
+        width: 100%
+        height: 2px
+        border-radius: 1px
+        background-color: #484848
+        opacity: 0.15
+      &:hover
+        text-decoration: none
+
+
+.singe-post
+  padding: 100px 0
+  position: relative
+  .title
+    font-size: 45px
+    margin-bottom: 30px
+    position: relative
+    padding-left: 25px
+    padding-right: 25px
+    margin-left: 0
+    display: inline-block
+    &:after, &:before
+      position: absolute
+      top: 50%
+      transform: translateX(-50%)
+      content: ''
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background: #ffffff
+    &:before
+      left: 0
+    &:after
+      right: 0!important
+      left: unset
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#647eb7, 0.9)
+  .container
+    position: relative
+    z-index: 3
+  &-description
+    p
+      color: #ffffff
+      font-weight: 300
+
+
+.cooperation-content-form
+  padding: 20px
+  max-width: 100%
+  width: 100%
+  height: auto
+  box-shadow: 0 0 13px rgba(43, 83, 162, 0.44)
+  border: 2px solid #1a376f
+  background: transparent
+  margin: 0 auto
+  margin-top: 30px
+  padding: 20px 40px
+  +media-breakpoint-down(md)
+    margin: 0 auto
+    margin-top: 30px
+    padding: 10px
+    box-sizing: border-box
+  .form-desc
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +media-breakpoint-down(sm)
+      align-items: flex-start!important
+    p
+      display: flex
+      align-items: center
+      .fa
+        +media-breakpoint-down(lg)
+          margin-top: 0
+  .fa
+    color: $link-color
+    font-size: 24px
+    margin-right: 5px
+  h4
+    font-size: 38px
+    text-align: center
+    font-weight: 700
+    margin-bottom: 29px
+  form
+    background: transparent
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+  .form-content
+    max-width: 100%
+    width: 100%
+    margin: 0 auto
+    margin-bottom: 20px
+    +media-breakpoint-down(xs)
+      width: 90%
+    &__text
+      margin-top: 20px
+      text-align: center
+    &__link-file
+      width: 200px!important
+      margin-left: 10px
+      +media-breakpoint-down(xs)
+        margin: 0 auto
+        margin-top: 20px
+        text-align: center
+        display: block
+  .row-form
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+    +media-breakpoint-down(md)
+      flex-direction: column
+      align-items: center
+  .col-form
+    display: flex
+    width: 49%
+    align-items: flex-end
+    +media-breakpoint-down(md)
+      width: 80%
+      margin-bottom: 15px
+    +media-breakpoint-down(sm)
+      width: 100%
+
+  .form-button
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .col-form
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+  input[type=text]
+    border: none
+    border-bottom: 2px solid #e8e8e8
+    max-width: 100%
+    width: 100%
+    background: transparent
+    +media-breakpoint-down(xs)
+      max-width: 100%
+  textarea
+    border: 2px solid #e8e8e8
+    resize: none
+    width: 100%
+    background: transparent
+    height: 100px
+    ::placeholder
+      color: transparent
+
+
+  label
+    width: 250px
+    margin-bottom: 0
+    span
+      line-height: 1.2
+      display: inline-block
+    +media-breakpoint-down(xs)
+      width: auto
+      span
+        display: none
+  input[type=file]
+    +media-breakpoint-down(xs)
+      width: 85%
+
+  .inputfile
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+  .inputfile + label
+      color: black
+      background-color: transparent
+      display: inline-block
+      text-align: center
+      width: auto
+      cursor: pointer
+      +media-breakpoint-down(xs)
+        width: 100%
+        margin: 0 auto
+  
+  .inputfile:focus + label strong,
+  .inputfile + label:hover strong
+      background-color: #fafafa
+  .inputfile:focus + label
+    outline: 1px dotted #000
+    outline: -webkit-focus-ring-color auto 5px
+  .inputfile + label * 
+    pointer-events: none
+  .inputfile + label span
+    width: 200px
+    min-height: 2em
+    display: inline-block
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    vertical-align: middle
+    border-bottom: 2px solid #b4bfe2
+    margin-left: 10px
+    +media-breakpoint-down(xs)
+      width: 100%
+      margin-left: 0
+      margin-top: 10px
+  .inputfile + label strong
+    height: 100%
+    color: black
+    font-weight: 400
+    background-color: #ffffff
+    display: inline-block
+    padding: 7px 25px
+    border: 1px solid #ccc
+    border-radius: 10px
+    +media-breakpoint-down(md)
+      padding: 7px 13px
+
+
+
+
+  .form__btn
+    display: block
+    width: 203px
+    height: 56px
+    box-shadow: 0 0 28px 2px rgba(45, 70, 119, 0.23)
+    border-radius: 28px
+    border: 1px solid #ffffff
+    background-color: #1a376f
+    color: #ffffff
+    margin: 0 auto

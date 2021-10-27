@@ -1,0 +1,64 @@
+@import vars
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+.parners-page
+  .title
+    margin-bottom: 0
+    margin-left: 0
+
+
+.row-partner
+  background-image: url(../img/parners-bg.png)
+  background-position: center
+  background-size: 1000px
+  background-repeat: repeat-y
+  &-inner
+    display: flex
+    justify-content: space-between
+    max-width: 1345px
+    padding:
+      bottom: 85px
+      right: 20px
+      left: 20px
+    margin: 0 auto
+    +media-breakpoint-down(lg)
+      max-width: 1140px
+    +media-breakpoint-down(sm)
+      padding:
+        right: 10px
+        left: 10px
+        top: 30px
+        bottom: 30px
+    +media-breakpoint-down(xs)
+      flex-wrap: wrap
+      justify-content: center
+
+  &-col__img
+    width: 271px
+    height: 271px
+    overflow: hidden
+    margin-right: 25px
+    +media-breakpoint-down(sm)
+      width: 170px
+      height: 170px
+    +media-breakpoint-down(xs)
+      margin: 0 auto
+      margin-bottom: 20px
+  h4
+    color: $color-red
+    font-size: 41px
+    margin-bottom: 20px
+    +media-breakpoint-down(sm)
+      font-size: 32px
+    +media-breakpoint-down(xs)
+      text-align: center
+
+  &-right
+    +media-breakpoint-down(xs)
+      .row-partner-inner
+        flex-direction: column-reverse
+    h4
+      text-align: left
+      +media-breakpoint-down(xs)
+        text-align: center
+  &-bg-color
+    background: #fafafa
