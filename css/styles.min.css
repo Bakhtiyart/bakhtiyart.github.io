@@ -6776,6 +6776,7 @@ strong {
 
   .footer-content{
     flex-wrap: wrap;
+    justify-content: center;
   }
   .footer-content .address{
     margin-bottom: 15px;
@@ -6795,5 +6796,22 @@ strong {
   }
   .about__desc img {
     width: 280px;
+  }
+  .header-top{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header-top__link {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .header-top .logo {
+    display: none;
+  }
+  .portfolio .rows{
+    flex-wrap: wrap;
+  }
+  .portfolio__item{
+    width: 100%;
   }
 }
