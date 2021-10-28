@@ -1,0 +1,13 @@
+$default-font: "Myriad Pro", sans-serif;
+$accent: #e35c42;
+$text: #333;
+$warning: #e35c42 !default;
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 1400px, xl: 1800px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 1300px, xl: 1770px);
+
+$gutter: $grid-gutter-width;
