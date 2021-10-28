@@ -6667,7 +6667,7 @@ strong {
 }
 
 .portfolio__item:after {
-  content: '';
+  content: '';      
 }
 .portfolio__item img{
   position: absolute;
